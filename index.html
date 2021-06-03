@@ -1,0 +1,3943 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Blanchard</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+
+  <link rel="stylesheet" href="./css/choices.min.css">
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/mainsection.css">
+  <link rel="stylesheet" href="./css/gallerysection.css">
+  <link rel="stylesheet" href="./css/catalogsection.css">
+  <link rel="stylesheet" href="./css/eventssection.css">
+  <link rel="stylesheet" href="./css/editionssection.css">
+  <link rel="stylesheet" href="./css/projectssection.css">
+  <link rel="stylesheet" href="./css/footer.css">
+
+
+</head>
+
+<body>
+  <div class="animate">
+    <picture class="animate__picture">
+      <source srcset="./img/jpg/main-image1-320.jpg" media="(max-width: 320px)">
+      <source srcset="./img/jpg/main-image1-768.jpg" media="(max-width: 768px)">
+      <source srcset="./img/jpg/main-image1-1024.jpg" media="(max-width: 1024px)">
+      <img class="animate__img" src="./img/jpg/mainimage1.jpg" alt="">
+    </picture>
+    <picture class="animate__picture">
+      <source srcset="./img/jpg/main-image2-320.jpg" media="(max-width: 320px)">
+      <source srcset="./img/jpg/main-image2-768.jpg" media="(max-width: 768px)">
+      <source srcset="./img/jpg/main-image2-1024.jpg" media="(max-width: 1024px)">
+      <img class="animate__img" src="./img/jpg/mainimage2.jpg" alt="">
+    </picture>
+    <picture class="animate__picture">
+      <source srcset="./img/jpg/main-image3-320.jpg" media="(max-width: 320px)">
+      <source srcset="./img/jpg/main-image3-768.jpg" media="(max-width: 768px)">
+      <source srcset="./img/jpg/main-image3-1024.jpg" media="(max-width: 1024px)">
+      <img class="animate__img" src="./img/jpg/mainimage3.jpg" alt="">
+    </picture>
+  </div>
+  <div class="main">
+    <header>
+      <nav class="nav-first">
+        <div class="nav-first__content container">
+          <div id="menu" class="menu container">
+            <button id="menu__close" class="close"></button>
+            <ul class="menu__list">
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Галерея</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">События</a></li>
+              <li><a href="#">Издания</a></li>
+              <li><a href="#">Проекты</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <a href="#" class="menu__btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                <path
+                  d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+                  fill="white" />
+              </svg>
+              Войти
+            </a>
+          </div>
+          <button id="burger" class="burger">
+            <span></span>
+          </button>
+          <a class="logo">
+            <picture>
+              <source srcset="./img/adaptive/320/logo320.png" media="(max-width: 320px)">
+              <source srcset="./img/adaptive/1024/logo1024.png" media="(max-width: 1024px)">
+              <img src="./img/png/logotip.png" alt="Логотип">
+            </picture>
+          </a>
+          <form id="form-search__adaptive" class="form-search form-search--adaptive">
+            <button id="form-search__btn" class="form-search__btn">
+              <svg class="form-search__icon" xmlns="http://www.w3.org/2000/svg" width="23" height="22"
+                viewBox="0 0 23 22" fill="none">
+                <rect width="6.8678" height="1.71695"
+                  transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                  fill="white" />
+              </svg>
+            </button>
+            <input id="form-search" class="form-search__input form-search__adaptive-input" required type="search">
+            <button id="form-search__close" class="form-search__close close"></button>
+          </form>
+          <ul class="nav-first__list">
+            <li class="nav-first__item">
+              <a href="#">О нас</a>
+            </li>
+            <li class="nav-first__item">
+              <a href="#">Галерея</a>
+            </li>
+            <li class="nav-first__item">
+              <a href="#">Каталог</a>
+            </li>
+            <li class="nav-first__item">
+              <a href="#">События</a>
+            </li>
+            <li class="nav-first__item">
+              <a href="#">Издания</a>
+            </li>
+            <li class="nav-first__item">
+              <a href="#">Проекты</a>
+            </li>
+            <li class="nav-first__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <a href="#" class="nav-first__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+              <path
+                d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+                fill="white" />
+            </svg>
+            Войти
+          </a>
+        </div>
+      </nav>
+      <div class="nav-second">
+        <div class="container nav-second__content">
+          <ul class="nav-second__list">
+            <li class="nav-second__item"><a href="#" class="nav-second__link" data-path="one">Реализм</a>
+              <ul class="dropdown dropdown-scroll" data-simplebar data-target="one">
+                <li class="dropdown__item dropdown__image dropdown__image--tintoretto"><a href="#">Тинторетто</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--fridrich"><a href="#">Фридрих</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--leonardo"><a href="#">Леонардо</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--verrocchio"><a href="#">Верроккьо</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--tintoretto"><a href="#">Тинторетто</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--fridrich"><a href="#">Фридрих</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--leonardo"><a href="#">Леонардо</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--verrocchio"><a href="#">Верроккьо</a></li>
+              </ul>
+            </li>
+            <li class="nav-second__item"><a href="#" class="nav-second__link" data-path="two">Импрессионизм</a>
+              <ul class="dropdown dropdown-scroll" data-simplebar data-target="two">
+                <li class="dropdown__item dropdown__image dropdown__image--mone"><a href="#">Моне</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--sisley"><a href="#">Сислей</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--mane"><a href="#">Мане</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--renoir"><a href="#">Ренуар</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--mone"><a href="#">Моне</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--sisley"><a href="#">Сислей</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--mane"><a href="#">Мане</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--renoir"><a href="#">Ренуар</a></li>
+              </ul>
+            </li>
+            <li class="nav-second__item"><a href="#" class="nav-second__link" data-path="three">Постимпрессионизм</a>
+              <ul class="dropdown dropdown-scroll" data-simplebar data-target="three">
+                <li class="dropdown__item dropdown__image dropdown__image--vangog"><a href="#">Ван Гог</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--sezann"><a href="#">Сезанн</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--gogen"><a href="#">Гоген</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--sera"><a href="#">Сёра</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--vangog"><a href="#">Ван Гог</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--sezann"><a href="#">Сезанн</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--gogen"><a href="#">Гоген</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--sera"><a href="#">Сёра</a></li>
+              </ul>
+            </li>
+            <li class="nav-second__item"><a href="#" class="nav-second__link" data-path="four">Авангард</a>
+              <ul class="dropdown dropdown-scroll" data-simplebar data-target="four">
+                <li class="dropdown__item dropdown__image dropdown__image--kandinskiy"><a href="#">Кандинский</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--marinetty"><a href="#">Маринетти</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--malevich"><a href="#">Малевич</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--picasso"><a href="#">Пикассо</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--kandinskiy"><a href="#">Кандинский</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--marinetty"><a href="#">Маринетти</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--malevich"><a href="#">Малевич</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--picasso"><a href="#">Пикассо</a></li>
+              </ul>
+            </li>
+            <li class="nav-second__item"><a href="#" class="nav-second__link" data-path="five">Футуризм</a>
+              <ul class="dropdown dropdown-scroll" data-simplebar data-target="five">
+                <li class="dropdown__item dropdown__image dropdown__image--karra"><a href="#">Карра</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--pratella"><a href="#">Прателла</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--severini"><a href="#">Северини</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--balla"><a href="#">Балла</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--karra"><a href="#">Карра</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--pratella"><a href="#">Прателла</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--severini"><a href="#">Северини</a></li>
+                <li class="dropdown__item dropdown__image dropdown__image--balla"><a href="#">Балла</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="form-search">
+            <button class="form-search__btn">
+              <svg class="form-search__icon" xmlns="http://www.w3.org/2000/svg" width="23" height="22"
+                viewBox="0 0 23 22" fill="none">
+                <rect width="6.8678" height="1.71695"
+                  transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                  fill="white" />
+              </svg>
+            </button>
+            <input class="form-search__input" required type="search" placeholder="Поиск по сайту">
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container main-block">
+        <h1 class="main-heading">Прикоснитесь к прекрасному</h1>
+        <p class="main-text text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт
+          предпосылки для новых предложений.</p>
+        <a href="#" class="main-btn">Подписаться на рассылку</a>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <div class="container">
+      <h2 class="second-heading">О нас</h2>
+      <p class="about-us-text text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
+        однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения
+        внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта
+        влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое
+        качество позиционных исследований создаёт необходимость включения в производственный план целого ряда
+        внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации
+        современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев
+        населения, а значит, должны быть разоблачены.</p>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="container">
+      <div class="gallery-section__content">
+        <div class="gallery-section__filter">
+          <h2 class="gallery-section__heading second-heading">Галерея</h2>
+          <div class="gallery-section__text">Фильтровать по:</div>
+          <select name="select" required>
+            <option disabled selected value="">Автор</option>
+            <option>Направление</option>
+            <option>Техника</option>
+          </select>
+          <p class="gallery-section__description">Вам предоставляется 10 бесплатных скачиваний. Для увеличения
+            количества скачиваний <a class="purple-link" href="#"> авторизуйтесь, </a> либо воспользуйтесь лицензией.
+          </p>
+        </div>
+        <div class="swiper-slide__active-block" data-target="torse">
+          <picture class="swiper-slide__picture">
+            <source srcset="./img/jpg/galleryimages/gallery-image-active/gallery-image-active-1-320.jpg" media="(max-width: 767px)">
+            <source srcset="./img/jpg/galleryimages/gallery-image-active/gallery-image-active-1-1024.jpg" media="(max-width: 1500px)">
+            <img src="./img/jpg/galleryimages/gallery-image-active/gallery-image-active-1.jpg" alt="">
+          </picture>
+          <button class="close close--portrait"></button>
+          <div class="swiper-slide__portrait">
+            <h3 class="swiper-slide__artist">Казимир Малевич</h3>
+            <h4 class="swiper-slide__name-picture">"Торс"</h4>
+            <span class="swiper-slide__date">1928-1929</span>
+            <p class="swiper-slide__text">Малевич создает картину, на которой изображен обезличенный торс, который больше напоминает манекен портного. У образа нет лица – только закрашенный темно-розовым цветом овал.</p>
+          </div>
+        </div>
+        <div class="swiper-slide__active-block" data-target="lady-with-rake">
+          <picture class="swiper-slide__picture">
+            <source srcset="./img/jpg/galleryimages/gallery-image-active/gallery-image-active-2-320.jpg" media="(max-width: 767px)">
+            <source srcset="./img/jpg/galleryimages/gallery-image-active/gallery-image-active-2-1024.jpg" media="(max-width: 1500px)">
+            <img src="./img/jpg/galleryimages/gallery-image-active/gallery-image-active-2.jpg" alt="">
+          </picture>
+          <button class="close close--portrait"></button>
+          <div class="swiper-slide__portrait">
+            <h3 class="swiper-slide__artist">Казимир Малевич</h3>
+            <h4 class="swiper-slide__name-picture">"Женщина с граблями"</h4>
+            <span class="swiper-slide__date">1931-1932</span>
+            <p class="swiper-slide__text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+          </div>
+        </div>
+        <div class="swiper-slide__active-block" data-target="harvesting-rye">
+          <picture class="swiper-slide__picture">
+            <source srcset="./img/jpg/galleryimages/gallery-image-active/gallery-image-active-3-320.jpg" media="(max-width: 767px)">
+            <source srcset="./img/jpg/galleryimages/gallery-image-active/gallery-image-active-3-1024.jpg" media="(max-width: 1500px)">
+            <img src="./img/jpg/galleryimages/gallery-image-active/gallery-image-active-3.jpg" alt="">
+          </picture>
+          <button class="close close--portrait"></button>
+          <div class="swiper-slide__portrait">
+            <h3 class="swiper-slide__artist">Казимир Малевич</h3>
+            <h4 class="swiper-slide__name-picture">"Уборка ржи"</h4>
+            <span class="swiper-slide__date">1912</span>
+            <p class="swiper-slide__text">Образы крестьянской жизни, образы сельского труда, воплощенные художником отличаются пронзительной нотой драматизма, о котором Малевичу и в голову не приходило помышлять ранее.</p>
+          </div>
+        </div>
+        <div class="swiper swiper-gallery">
+          <div class="swiper-container swiper-container--gallery">
+            <div class="swiper-pagination swiper-pagination--gallery"></div>
+            <div class="swiper-wrapper swiper-wrapper--gallery">
+              <div class="swiper-slide swiper-slide--gallery" data-pict="torse">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage1.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery" data-pict="lady-with-rake">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage2.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery" data-pict="harvesting-rye">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage3.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage4.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage5.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage6.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage7.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage8.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage9.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage10.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage11.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage12.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage13.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage14.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage15.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage16.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage17.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage18.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage19.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage20.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage21.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage22.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage23.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage24.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage25.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage26.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage27.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage28.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage29.jpg" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide--gallery">
+                <img class="swiper-slide__image" src="./img/jpg/galleryimages/galleryimage30.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-button-prev swiper-button-prev--gallery">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <path
+                  d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
+                  fill="#666666" />
+                <path class="swiper-button-border"
+                  d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
+                  stroke="black" />
+                <path d="M16 20L11 15L16 10" stroke="white" />
+              </svg>
+            </div>
+            <div class="swiper-button-next swiper-button-next--gallery">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <path
+                  d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
+                  fill="#666666" />
+                <path class="swiper-button-border"
+                  d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
+                  stroke="black" />
+                <path d="M14 20L19 15L14 10" stroke="white" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <p class="gallery-section__description gallery-section__description--adaptive">Вам предоставляется 10 бесплатных
+          скачиваний. Для увеличения количества скачиваний <a class="purple-link" href="#"> авторизуйтесь, </a> либо
+          воспользуйтесь лицензией. </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog-section">
+    <div class="container">
+      <div class="catalog-section__countries">
+        <h2 class="second-heading second-heading--catalog">Каталог</h2>
+        <ul class="catalog-section__countries__list">
+          <li class="catalog-section__countries__item" data-target="france-logo">
+            <button class="catalog-section__countries__link catalog-section__countries__link--france" data-path="france"
+              data-logo="france-logo"></button>
+          </li>
+          <li class="catalog-section__countries__item" data-target="germany-logo">
+            <button class="catalog-section__countries__link catalog-section__countries__link--germany"
+              data-path="germany" data-logo="germany-logo"></button>
+          </li>
+          <li class="catalog-section__countries__item is-active" data-target="italy-logo">
+            <button class="catalog-section__countries__link catalog-section__countries__link--italy" data-path="italy"
+              data-logo="italy-logo"></button>
+          </li>
+          <li class="catalog-section__countries__item" data-target="russia-logo">
+            <button class="catalog-section__countries__link catalog-section__countries__link--russia" data-path="russia"
+              data-logo="russia-logo"></button>
+          </li>
+          <li class="catalog-section__countries__item" data-target="belgium-logo">
+            <button class="catalog-section__countries__link catalog-section__countries__link--belgium"
+              data-path="belgium" data-logo="belgium-logo"></button>
+          </li>
+        </ul>
+      </div>
+      <p class="catalog-section__text text">Акционеры крупнейших компаний, которые представляют собой яркий пример
+        континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики
+        и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство,
+        нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на
+        независимые элементы.</p>
+      <div class="catalog-section__artists" data-target="france">
+        <div class="catalog-section__artists__description is-active" data-target="d’Eyck">
+          <div class="catalog-section__artists__centering-image">
+            <img class="catalog-section__artists__image" src="./img/jpg/catalogimages/BarthelemydEyck.jpg"
+              alt="Бартелеми д’Эйк">
+          </div>
+          <h3 class="catalog-section__artists__name third-heading">Бартелеми д’Эйк</h3>
+          <span class="catalog-section__artists__years-of-life fourth-heading">1420 — 1470</span>
+          <p class="catalog-section__artists__text">Французский художник нидерландского происхождения, принадлежавший к
+            авиньонской школе живописи. Не существует ни одного подписанного Бартелеми произведения. Весь обширный
+            корпус работ, который сегодня числится за ним, приписан художнику исключительно по стилистическим признакам.
+            Случай с Бартелеми д’Эйком достаточно уникален: ему приписываются сегодня произведения трёх разных анонимных
+            мастеров, довольно давно известных искусствоведческой науке.</p>
+        </div>
+        <div class="catalog-section__artists__description" data-target="Fouquet">
+          <div class="catalog-section__artists__centering-image">
+            <img class="catalog-section__artists__image" src="./img/jpg/catalogimages/JeanFouquet.jpg" alt="Фуке Жан">
+          </div>
+          <h3 class="catalog-section__artists__name third-heading">Фуке Жан</h3>
+          <span class="catalog-section__artists__years-of-life fourth-heading">ок. 1415—1420 — ок. 1478—1481</span>
+          <p class="catalog-section__artists__text">Жан Фуке родился в г. Тур в долине Луары, который во второй половине
+            XV в. стал резиденцией французских королей Карла VII и Людовика XI и одним из главных художественных центров
+            Франции. О годах его молодости сведений немного: вероятно, в начале 1440-х гг. Фуке учился в Париже, а затем
+            первым из французских художников отправился в Италию и познакомился с искусством итальянского Возрождения.
+            Между 1444 и 1446 он пишет портрет папы Евгения IV, вызвавший восхищение итальянцев.</p>
+        </div>
+        <div class="catalog-section__artists__description" data-target="Dombet">
+          <div class="catalog-section__artists__centering-image">
+            <img class="catalog-section__artists__image" src="./img/jpg/catalogimages/Dombe.jpg" alt="Гийом Домбе">
+          </div>
+          <h3 class="catalog-section__artists__name third-heading">Гийом Домбе</h3>
+          <span class="catalog-section__artists__years-of-life fourth-heading">1414 — 1461</span>
+          <p class="catalog-section__artists__text">Французский художник и витражист. Имя Гийома Домбе связывают с
+            большим алтарём, выполненным для этого же собора в 1443—1445 годах — знаменитым «Благовещением из Экса».
+            Французский исследователь Жан Бойер первым высказал предположение, что так называемый Мастер Благовещения из
+            Экса — это Гийом Домбе, полагая, что его мастерская в 1440 годах была связана с собором Сен Совёр самыми
+            разными заказами.</p>
+        </div>
+        <div class="accordion-section">
+          <div class="accordion">
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1400 по 1499 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link is-active" data-artist="d’Eyck">Бартелеми д’Эйк</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link" data-artist="Dombet">Домбе, Гийом</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Жакмар де Эсден</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Иверни, Жак</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Картон, Ангерран</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лиферинкс, Йос</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мармион, Симон</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мастер Нарбоннского парамана</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мастер Орозия</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мастер святого Эгидия</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мастер Часослова Бедфорда</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мастер часослова Бусико</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мастер часослова семьи Спитц</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Перреаль, Жан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Тестар, Робине</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Фроман, Никола</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link" data-artist="Fouquet">Фуке, Жан</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1500 по 1599 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Биго, Трофим</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Буш, Валентин</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дипр, Никола</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дюбуа, Франсуа</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дюваль, Марк</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дюмустье, Даниель</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дюмустье, Жоффруа</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дюмустье, Косм</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дюмустье, Этьен</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Карон, Антуан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Кенель, Франсуа</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Клуэ, Жан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Клуэ, Франсуа</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Кузен, Жан (Старший)</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Кузен, Жан Младший</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лимозен, Леонар</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Перреаль, Жан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Приматиччо, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Рабель, Даниэль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Тестар, Робине</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Россо Фьорентино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Хуни, Хуанде де</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1600 по 1699 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Агар, Жак</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Алле, Клод-Ги</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Аллегрен, Этьен</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Божен, Любен</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Булонь, Мадлен</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бурдон, Себастьян</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Вердье, Франсуа</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Вивьен, Жозеф</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Депорт, Александр-Франсуа</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Жилло, Клод</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Куапель, Антуан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Куапель, Ноэль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лафосс, Шарль де</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ленен, Антуан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лесюэр, Эсташ</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лоррен, Клод</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Одран, Клод</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пиль, Роже де</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пильман, Филипп</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пюже, Пьер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Рау, Жан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Риго, Гиацинт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Уасс, Рене-Антуан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Франсуа де Номе</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1700 по 1799 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Агар, Жак</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Аллегрен, Этьен</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Башелье, Жан-Жак</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бертен, Николя</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Буше, Франсуа</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ватто, Антуан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Верне, Клод Жозеф</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Грандон, Шарль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гроньяр, Алексис</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Делабарт, Жерар</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Депре, Луи-Жан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Друэ, Жан-Жермен</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дюплесси, Жозеф</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Жувене, Жан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Казанова, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Куапель, Шарль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лемуан, Жан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Монье, Жан-Лоран</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Одран, Клод</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пиль, Роже де</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Раврио, Андре-Антуан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Риго, Гиацинт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Тевенен, Шарль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Шарден, Жан-Батист</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1800 по 1899 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Альбрие, Жозеф</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ангран, Леонс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Байяр, Эмиль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Барден, Жан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бенуа, Феликс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бодри, Поль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бонёр, Огюст</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бретон, Жюль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Валансьен, Пьер-Анри де</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гальен-Лалу, Эжен</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гёнётт, Норберт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Герен, Жан-Урбен</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дебутен, Марселен</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дежё, Эмили</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Делеклюз, Огюст-Жозеф</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Жерве, Анри</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Жирарде, Жюль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Зим, Феликс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Котте, Шарль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лаваль, Шарль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Руар, Анри</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Трюта, Феликс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Умбер, Фернан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Этекс, Антуан</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1900 по 1999 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Аллио, Рене</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ангран, Шарль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бутиньи, Поль-Эмиль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Вюйар, Эдуар</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гиша, Леон</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Даньян-Бувре, Паскаль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дюшан, Марсель</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Жансем, Жан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Зим, Феликс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ирисс, Антуан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Кислинг, Моисей</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Кокто, Жан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лебаск, Анри</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Манген, Анри</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мисс Ван</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Озанфан, Амеде</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Поляков, Серж</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Рабье, Бенжамен</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Сезанн, Поль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Фриан, Эмиль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ханен, Фредерик де</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Царфин, Файбиш-Шрага</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Шагал, Марк Захарович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Эллё, Поль</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 2000 г.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Алтунин, Константин Викторович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Арно Курле де Врежий</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Арнштам, Кирилл Александрович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бейрути, Риад</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Беттанкур, Пьер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Билал, Энки</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Битран, Альберт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Богатырёв, Михаил Юрьевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ван Хов, Франсин</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гаруст, Жерар</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Давид Б.</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дюран-Рейнальдо, Матиас</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Жансем, Жан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Клавелу, Николь</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Маринетти, Жюльен</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мисс Ван</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Рансельяк, Бернар</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Сирил Конго</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ханта, Шимон</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-section__artists" data-target="germany">
+        <div class="catalog-section__artists__description is-active" data-target="Burgkmair">
+          <div class="catalog-section__artists__centering-image">
+            <img class="catalog-section__artists__image" src="./img/jpg/catalogimages/Burgkmair.jpg"
+              alt="Бургкмайр, Ханс">
+          </div>
+          <h3 class="catalog-section__artists__name third-heading">Бургкмайр, Ханс</h3>
+          <span class="catalog-section__artists__years-of-life fourth-heading">1473 — 1531</span>
+          <p class="catalog-section__artists__text">Немецкий художник, гравер и скульптор.Ханс Бургкмайр родился в 1473
+            году в городе Аугсбурге; происходил из семьи художников. Первоначальное обучение он прошёл у своего отца,
+            художника Томана Бургкмайра (1444—1523). С 1488 по 1490 год Бургкмайр проходил обучение в Кольмаре в Эльзасе
+            у Мартина Шонгауэра. Не исключено, что в годы странствий он доехал из Аугсбурга до Кёльна. Около 1507 года
+            художник побывал в Италии, где его привлекло творчество Карло Кривелли и Витторе Карпаччо. Наряду с
+            живописью Бургкмайр занимался ксилографией.</p>
+        </div>
+        <div class="catalog-section__artists__description" data-target="Wolgemut">
+          <div class="catalog-section__artists__centering-image">
+            <img class="catalog-section__artists__image" src="./img/jpg/catalogimages/Wolgemut.jpg"
+              alt="Михаэль Вольгемут">
+          </div>
+          <h3 class="catalog-section__artists__name third-heading">Михаэль Вольгемут</h3>
+          <span class="catalog-section__artists__years-of-life fourth-heading">1434 — 30 ноября 1519</span>
+          <p class="catalog-section__artists__text">Михаэль Вольгемут — немецкий живописец, гравёр и резчик по дереву.
+            Представитель нюрнбергской школы живописи. В его мастерской в 1486-89 годах учился Альбрехт Дюрер. Вольгемут
+            выполнял заказ саксонского курфюрста Фридриха Мудрого по оформлению его дворца в Виттенберге (утрачен во
+            Вторую мировую войну). К лучшим работам Вольгемута относятся: алтарь Перингсдёрфферов (ныне в Церкви мира в
+            Нюрнберге), резной, украшенный живописью алтарь церкви св. Марии в Цвиккау, роспись зала ратуши в Госларе,
+            алтарь в Городской церкви Иоанна Крестителя в Швабахе и четыре алтарные панели в мюнхенской пинакотеке.
+            Вольгемут писал также портреты.</p>
+        </div>
+        <div class="catalog-section__artists__description" data-target="Witz">
+          <div class="catalog-section__artists__centering-image">
+            <img class="catalog-section__artists__image" src="./img/jpg/catalogimages/KonradWitz.jpg"
+              alt="Михаэль Вольгемут">
+          </div>
+          <h3 class="catalog-section__artists__name third-heading">Виц, Конрад</h3>
+          <span class="catalog-section__artists__years-of-life fourth-heading">ок. 1400 — 1446</span>
+          <p class="catalog-section__artists__text">Немецкий и швейцарский художник.О его жизни до 1431 года, когда
+            художник переехал в Базель, ничего не известно. В 1434 году он вошёл в гильдию художников Базеля, а в
+            следующем году стал гражданином этого города. Возможно, Виц либо учился у нидерландских мастеров, либо
+            совершил путешествие в Нидерланды, так как в его произведениях прослеживается влияние художников этой
+            страны. Весьма вероятны также контакты с бургундской скульптурной школой, в том числе знакомство с
+            творчеством Клауса Слютера. В 1444 году, по приглашению членов Базельского Собора, кардинала Франсуа де
+            Миса, епископа Женевского, Конрад Виц приехал в Женеву, где исполнил картину для главного алтаря в соборе
+            Святого Петра.</p>
+        </div>
+        <div class="accordion-section">
+          <div class="accordion">
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1400 по 1499 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link is-active" data-artist="Burgkmair">Бургкмайр, Ханс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link" data-artist="Witz">Виц, Конрад</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link" data-artist="Wolgemut">Вольгемут, Михаэль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гольбейн, Ганс (Старший)</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дюрер, Альбрехт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Катцхаймер, Вольфганг</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Конрад фон Зост</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лохнер, Штефан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мастер Бертрам</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мастер жития Марии</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мастер святой Вероники</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мастер Франке</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мастер E. S.</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мекенен, Исраэль ван</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мемлинг, Ганс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мозер, Лукас</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мульчер, Ганс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Нотке, Бернт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Плейденвурф, Вильгельм</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Плейденвурф, Ганс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Полак, Ян</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Роде, Герман</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Цайтблом, Бартоломеус</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Шаффнер, Мартин</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1500 по 1599 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Аахен, Ханс фон</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Альдегревер, Генрих</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Альтдорфер, Альбрехт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Амбергер, Христоф</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бальдунг, Ханс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бехам, Бартель</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Брей, Йорг</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Брейн, Бартоломеус</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бри, Теодор де</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Брозамер, Ганс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бургкмайр, Ханс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Вольгемут, Михаэль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гольбейн, Амброзиус</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гольбейн, Ганс (Младший)</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гольбейн, Ганс (Старший)</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гофман, Ганс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дюрер, Альбрехт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Йост де Негкер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Катцхаймер, Вольфганг</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Кобер, Мартин</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Кранах, Ганс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Кульмбах, Ганс фон</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Милих, Ганс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Нотке, Бернт</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1600 по 1699 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Аахен, Ханс фон</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ведекинд, Иоганн Генрих</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Вильманн, Михаэль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Детерс, Иоанн</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дувен, Ян Франс ван</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Зандрарт, Иоахим фон</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Кнеллер, Готфрид</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Кнюпфер, Николаус</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лингельбах, Иоганн</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лисс, Иоганн</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лот, Иоганн Карл</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лун, Иоахим</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Прейслер, Даниэль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Рихтер, Кристиан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Тамм, Франц Вернер фон</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Флегель, Георг</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Хайнц, Йоган Георг</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Эльсхаймер, Адам</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Прейслер, Иоганн Даниэль</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1700 по 1799 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Азам, Космас Дамиан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Антинг, Иоганн Фридрих</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бах, Карл Даниэль Фридрих</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бури, Фридрих</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ведекинд, Иоганн Генрих</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Вейч, Иоганн Фридрих</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Вейч, Фридрих Георг</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Веле, Генрих Теодор</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Вильманн, Михаэль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Графф, Антон</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гроот, Георг Кристоф</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гроот, Иван Фёдорович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Деннер, Бальтазар</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дженелли, Янус</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дувен, Ян Франс ван</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Зенфф, Карл Август</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Карстенс, Асмус Якоб</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Келлерхофен, Мориц</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лангер, Иоганн фон</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лисиевский, Георг</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Маульберч, Франц Антон</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Молитор, Ян Петр</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пэн, Антуан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Тангерман, Христиан</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1800 по 1899 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Адам, Альбрехт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Адам, Бенно</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Адам, Франц</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Айнмиллер, Генрих</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Аншютц, Герман</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ахенбах, Андреас</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ахенбах, Освальд</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Банцер, Карл</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Баум, Пауль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бегас, Оскар</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бегас, Рейнгольд</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бирштадт, Альберт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Блехен, Карл</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бордт, Ганс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Брайт, Антон</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Брейтбах, Карл</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Брендель, Альберт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бури, Фридрих</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Вимар, Карл</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Винтергерст, Йозеф</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дюрк, Фридрих</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Зайтц, Людвиг</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Залентин, Губерт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Зейдель, Август</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1900 по 1999 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Даврингхаузен, Генрих Мария</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дайтерс, Генрих</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дикс, Отто</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Диль, Людвиг</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дифенбах, Карл Вильгельм</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дреер, Петер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дукас, Гектор</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Зернер, Отто</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Зитте, Рудольф</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Иммендорф, Йорг</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Иттен, Иоганнес</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Йеррес, Карл</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Йордан, Олаф</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Калаизис, Арис</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Калькрёйт, Леопольд фон</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Кампф, Артур</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Кетельхён, Герман</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Клингер, Юлиус</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Кнётель, Рихард</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Кнорр, Гуго</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ламсфусс, Ульрих</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ленк, Петер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лорио</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Маач, Тило</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 2000 г.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Айтель, Тим</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Андрей Александер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Анзельм, Владимир Генрихович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ахтернбуш, Герберт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Беник, Себастьян</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бергер, Борис Нафтулович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Брух, Клаус фом</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Вундерлих, Пауль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ганиковский, Игорь Семёнович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Герц, Йохен</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Демниг, Гюнтер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дреер, Петер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Зитте, Рудольф</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Иммендорф, Йорг</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Калаизис, Арис</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Кифер, Ансельм</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ламсфусс, Ульрих</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ленк, Петер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Линденберг, Удо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Луц, Бернд</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мёрс, Вальтер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Митавский, Борис</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Оэлен, Альберт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Оэлен, Маркус</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-section__artists is-active" data-target="italy">
+        <div class="catalog-section__artists__description is-active" data-target="Benedetto">
+          <div class="catalog-section__artists__centering-image">
+            <img class="catalog-section__artists__image" src="./img/jpg/catalogimages/Benedetto.jpg"
+              alt="Бенедетто ди Биндо">
+          </div>
+          <h3 class="catalog-section__artists__name third-heading">Бенедетто ди Биндо</h3>
+          <span class="catalog-section__artists__years-of-life fourth-heading">1380-е — 1417</span>
+          <p class="catalog-section__artists__text crop-text-artist">Итальянский художник сиенской школы. Бенедетто ди
+            Биндо остался в истории искусства как сиенский художник, так сказать, «второго ряда», несмотря на то, что за
+            свою короткую жизнь он выполнил ряд весьма престижных заказов, включая работы в Сиенском соборе (работы в
+            главном соборе республики второстепенным художникам не поручались). Обучение он прошёл у Таддео ди Бартоло,
+            крупного сиенского мастера поздней готики, в боттеге которого Бенедетто трудился вместе с Грегорио ди Чекко.
+            Наибольшее влияние на его творчество оказали работы Симоне Мартини, в частности в выборе колорита, а тонко
+            проработанные лица его персонажей напоминают произведения Джованни да Милано.</p>
+        </div>
+        <div class="catalog-section__artists__description" data-target="Girlandaio">
+          <div class="catalog-section__artists__centering-image">
+            <img class="catalog-section__artists__image" src="./img/jpg/catalogimages/Girlandaio.jpg"
+              alt="Доменико Гирландайо">
+          </div>
+          <h3 class="catalog-section__artists__name third-heading">Доменико Гирландайо</h3>
+          <span class="catalog-section__artists__years-of-life fourth-heading">2 июня 1448 — 11 января 1494</span>
+          <p class="catalog-section__artists__text crop-text-artist">Один из ведущих флорентийских художников
+            Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава
+            художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор
+            фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских
+            персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+        </div>
+        <div class="catalog-section__artists__description" data-target="Biagio">
+          <div class="catalog-section__artists__centering-image">
+            <img class="catalog-section__artists__image" src="./img/jpg/catalogimages/Biagio.jpg"
+              alt="Бьяджо д’Антонио Туччи">
+          </div>
+          <h3 class="catalog-section__artists__name third-heading">Бьяджо д’Антонио Туччи</h3>
+          <span class="catalog-section__artists__years-of-life fourth-heading">ок. 1445 — ок. 1510</span>
+          <p class="catalog-section__artists__text crop-text-artist">Итальянский художник эпохи Возрождения. Его
+            творчество было вдохновлено работами Филиппо Липпи, Андреа Верроккьо, Доменико Гирландайо. Родился во
+            Флоренции. Последнюю четверть XV века работал в Фаэнце, но в его стиле мало элементов флорентийского стиля —
+            прослеживается влияние ранней нидерландской живописи. Сотрудничал с другими художниками над фресками
+            Сикстинской капеллы: вместе с Козимо Росселли — Тайная вечеря.Вероятный автор (соавтор) фрески Переход через
+            Красное море. Также рисовал панели для сундуков кассоне.</p>
+        </div>
+        <div class="accordion-section">
+          <div class="accordion">
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1400 по 1499 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link is-active" data-artist="Benedetto">Бенедетто ди Биндо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бергоньоне, Амброджо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Биссоло, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Больтраффио, Джованни</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бонсиньори, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Боттичини, Рафаэлло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Брамантино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бреа, Людовико</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link" data-artist="Biagio">Бьяджо д’Антонио Туччи</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Веккьетта</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Андреа Верроккьо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link" data-artist="Girlandaio">Доменико Гирландайо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Беноццо Гоццоли</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Граначчи, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Грегорио ди Чекко</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джованни да Удине</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джованни ди Паоло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джорджоне</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Парентино, Бернардо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пезеллино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пьетро Перуджино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Перуцци, Бальдассаре</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пизанелло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пинтуриккьо</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1500 по 1599 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Бенедетто ди Биндо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бергоньоне, Амброджо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Биссоло, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Больтраффио, Джованни</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бонсиньори, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Боттичини, Рафаэлло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Брамантино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бреа, Людовико</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бьяджо д’Антонио Туччи</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Веккьетта</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Андреа Верроккьо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Доменико Гирландайо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Беноццо Гоццоли</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Граначчи, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Грегорио ди Чекко</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джованни да Удине</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джованни ди Паоло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джорджоне</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Парентино, Бернардо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пезеллино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пьетро Перуджино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Перуцци, Бальдассаре</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пизанелло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пинтуриккьо</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1600 по 1699 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Бенедетто ди Биндо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бергоньоне, Амброджо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Биссоло, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Больтраффио, Джованни</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бонсиньори, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Боттичини, Рафаэлло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Брамантино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бреа, Людовико</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бьяджо д’Антонио Туччи</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Веккьетта</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Андреа Верроккьо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Доменико Гирландайо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Беноццо Гоццоли</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Граначчи, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Грегорио ди Чекко</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джованни да Удине</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джованни ди Паоло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джорджоне</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Парентино, Бернардо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пезеллино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пьетро Перуджино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Перуцци, Бальдассаре</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пизанелло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пинтуриккьо</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1700 по 1799 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Бенедетто ди Биндо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бергоньоне, Амброджо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Биссоло, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Больтраффио, Джованни</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бонсиньори, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Боттичини, Рафаэлло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Брамантино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бреа, Людовико</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бьяджо д’Антонио Туччи</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Веккьетта</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Андреа Верроккьо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Доменико Гирландайо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Беноццо Гоццоли</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Граначчи, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Грегорио ди Чекко</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джованни да Удине</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джованни ди Паоло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джорджоне</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Парентино, Бернардо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пезеллино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пьетро Перуджино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Перуцци, Бальдассаре</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пизанелло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пинтуриккьо</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1800 по 1899 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Бенедетто ди Биндо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бергоньоне, Амброджо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Биссоло, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Больтраффио, Джованни</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бонсиньори, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Боттичини, Рафаэлло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Брамантино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бреа, Людовико</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бьяджо д’Антонио Туччи</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Веккьетта</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Андреа Верроккьо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Доменико Гирландайо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Беноццо Гоццоли</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Граначчи, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Грегорио ди Чекко</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джованни да Удине</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джованни ди Паоло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джорджоне</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Парентино, Бернардо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пезеллино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пьетро Перуджино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Перуцци, Бальдассаре</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пизанелло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пинтуриккьо</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1900 по 1999 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Бенедетто ди Биндо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бергоньоне, Амброджо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Биссоло, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Больтраффио, Джованни</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бонсиньори, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Боттичини, Рафаэлло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Брамантино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бреа, Людовико</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бьяджо д’Антонио Туччи</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Веккьетта</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Андреа Верроккьо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Доменико Гирландайо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Беноццо Гоццоли</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Граначчи, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Грегорио ди Чекко</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джованни да Удине</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джованни ди Паоло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джорджоне</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Парентино, Бернардо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пезеллино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пьетро Перуджино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Перуцци, Бальдассаре</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пизанелло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пинтуриккьо</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 2000 г.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Бенедетто ди Биндо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бергоньоне, Амброджо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Биссоло, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Больтраффио, Джованни</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бонсиньори, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Боттичини, Рафаэлло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Брамантино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бреа, Людовико</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бьяджо д’Антонио Туччи</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Веккьетта</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Андреа Верроккьо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Доменико Гирландайо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Беноццо Гоццоли</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Граначчи, Франческо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Грегорио ди Чекко</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джованни да Удине</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джованни ди Паоло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Джорджоне</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Парентино, Бернардо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пезеллино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пьетро Перуджино</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Перуцци, Бальдассаре</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пизанелло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Пинтуриккьо</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-section__artists" data-target="russia">
+        <div class="catalog-section__artists__description is-active" data-target="Amvrosiy">
+          <div class="catalog-section__artists__centering-image">
+            <img class="catalog-section__artists__image" src="./img/jpg/catalogimages/Amvrosiy.jpg" alt="Амвросий">
+          </div>
+          <h3 class="catalog-section__artists__name third-heading">Амвросий</h3>
+          <span class="catalog-section__artists__years-of-life fourth-heading">1420-е — ок. 1494 года</span>
+          <p class="catalog-section__artists__text">Русский художник, мастер ювелирного искусства и резьбы по дереву,
+            жил и работал в XV веке. Одним из первых стал оставлять на своих работах подпись, что помогло в последующем
+            идентифицировать его работы.Все работы Амвросия хранятся в ризнице Троице-Сергиевой лавры.Ювелирные работы
+            Амвросия выполнены в технике литья, гравировки и скани. В своих работах он сочетал резьбу по дереву и
+            ювелирные приёмы, а также вводил в сканый узор цветную мастику, которая заполняла узор. Эта техника очень
+            похожа на технику перегородчатой эмалировки. Также он использовал технику прорезного рельефа на золотом
+            фоне. В основном же Амвросий следует в своём творчестве «рублевским» традициям того времени.</p>
+        </div>
+        <div class="catalog-section__artists__description" data-target="Rublev">
+          <div class="catalog-section__artists__centering-image">
+            <img class="catalog-section__artists__image" src="./img/jpg/catalogimages/AndreiRublev.jpg"
+              alt="Андрей Рублев">
+          </div>
+          <h3 class="catalog-section__artists__name third-heading">Андрей Рублёв</h3>
+          <span class="catalog-section__artists__years-of-life fourth-heading">1360-е — 29 января 1430</span>
+          <p class="catalog-section__artists__text">Русский иконописец московской школы иконописи, книжной и
+            монументальной живописи XV века. Канонизирован Русской православной церковью в лике преподобных. Творчество
+            Рублёва сложилось на почве художественных традиций Московского княжества. Он был хорошо знаком также со
+            славянским художественным опытом.</p>
+        </div>
+        <div class="catalog-section__artists__description" data-target="Prohor">
+          <div class="catalog-section__artists__centering-image">
+            <img class="catalog-section__artists__image" src="./img/jpg/catalogimages/Prohor.jpg"
+              alt="Прохор с Городца">
+          </div>
+          <h3 class="catalog-section__artists__name third-heading">Прохор с Городца</h3>
+          <span class="catalog-section__artists__years-of-life fourth-heading">XIV век — не ранее 1405</span>
+          <p class="catalog-section__artists__text">Иконописец начала XV века. Предполагаемый учитель Андрея
+            Рублёва.Сведения о жизни иконописца крайне скудны. Согласно Троицкой летописи, в 1405 году он вместе с
+            Феофаном Греком и Андреем Рублёвым расписывал Благовещенский собор Московского Кремля. На основании того,
+            что летописец называет Прохора «старцем» и упоминает его перед Рублёвым, В. Н. Лазарев сделал вывод: Прохор
+            был старше по возрасту и обладал большей известностью. Кроме того, исследователь предположил, что старец мог
+            быть не только коллегой, но и учителем Рублёва.</p>
+        </div>
+        <div class="accordion-section">
+          <div class="accordion">
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1400 по 1499 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link is-active" data-artist="Amvrosiy">Амвросий</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link" data-artist="Prohor">Прохор с Городца</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link" data-artist="Rublev">Андрей Рублёв</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1500 по 1599 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Дионисий</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Прокопий Чирин</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Истома Савин</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1600 по 1699 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Бахматов, Иван Яковлевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Безмин, Иван Артемьевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бовыкин, Никифор</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Василий Корень</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гурий Никитин</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Детерс, Иоанн</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дмитрий Григорьев Плеханов</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Зиновьев, Георгий Терентьев</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Золотарёв, Карп</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Зубов, Фёдор Евтихиевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ильин, Андрей</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Иосиф Владимиров</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Милютин, Михаил</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Никита Павловец</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Познанский, Василий</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Рязанец, Степан Григорьевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Рязанец, Тимофей Степанович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Салтанов, Богдан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Севастьян Дмитриев</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Сергеев, Иродион</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ухтомский, Феодот Феофанович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ушаков, Симон Фёдорович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Филатьев, Тихон Иванович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Чирин, Прокопий Иванович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Чоглоков, Михаил Иванович</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1700 по 1799 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Акимов, Иван Акимович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Алексеев, Фёдор Яковлевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бахматов, Иван Яковлевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бельский, Иван Иванович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Боровиковский, Владимир Лукич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Вишняков, Александр Иванович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Воронин, Лука Алексеевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Воронихин, Андрей Никифорович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дрождин, Пётр Семёнович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Екимов, Андрей Петрович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ерменёв, Иван Алексеевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Иванов, Андрей Иванович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Иванов, Михаил Матвеевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Козлов, Гавриил Игнатьевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Коптев, Василий Ильич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лапин, Иван Фёдорович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лосенко, Антон Павлович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Львов, Николай Александрович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Матвеев, Фёдор Михайлович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мусикийский, Григорий Семёнович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Никитин, Иван Никитич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Островский, Григорий Силович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Познанский, Василий</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Угрюмов, Григорий Иванович</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1800 по 1899 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Агин, Александр Алексеевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Айвазовский, Иван Константинович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Андриянов, Александр Яковлевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Аргунов, Николай Иванович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Афанасий де Палдо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бабаев, Полидор Иванович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Басин, Пётр Васильевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Белоногов, Иван Михайлович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Блазнов, Александр Петрович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Боткин, Михаил Петрович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Брюллов, Карл Павлович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Буров, Фёдор Емельянович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Варнек, Александр Григорьевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Вашков, Сергей Иванович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Виноградов, Сергей Арсеньевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Волков, Ефим Ефимович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Высотский, Константин Семёнович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гагарин, Григорий Григорьевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гоголинский, Нил Алексеевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гофман, Оскар Адольфович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Грибков, Сергей Иванович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Грузинский, Пётр Николаевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Десятов, Павел Алексеевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дурнов, Трофим Феодорович</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1900 по 1999 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Блинов, Иван Гаврилович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Богатырёв, Василий Семёнович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бокарев, Виктор Петрович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Брылов, Георгий Александрович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Брюханов, Николай Иванович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бубнов, Александр Павлович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бухаров, Виктор Семёнович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Варшамов, Рубен Артёмович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Васми, Рихард Рудольфович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Голицын, Илларион Владимирович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гольдин, Михаил Аронович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гордон, Михаил Абрамович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Грачёв, Юрий Степанович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Григорьев, Алексей Станиславович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Григорьев, Борис Дмитриевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Данов, Ростислав Александрович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дарьин, Геннадий Александрович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дронников, Николай Егорович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Еремеев, Николай Викторович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ефлов, Борис Александрович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Жук, Александр Борисович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Жуков, Владимир Васильевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Журавлёв, Василий Васильевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Игнатьев, Михаил Иванович</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 2000 г.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Алтунин, Константин Викторович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Андросов, Валерий Владимирович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Анищик, Аркадий Аркадьевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Антонышев, Ян Анатольевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Белков, Николай Сергеевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Блиок, Андрей Николаевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Богатов, Евгений Алексеевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Борисов, Леонид Константинович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бурьян, Олег Юрьевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Газизуллин, Исмагил Курбанович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Глазун, Алина Юрьевна</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Годинес, Омар</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гусейнов, Ариф</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Данилевский, Николай Сергеевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дереберя, Иван Григорьевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Доржиев, Бальжинима</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Евтушенко, Дмитрий Маратович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Животов, Геннадий Васильевич</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Миллер, Кирилл Семёнович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ненашева, Катрин</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Никонов, Владимир Глебович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ногин, Михаил Александрович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ольшанский, Борис Михайлович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Оньков, Виталий Николаевич</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-section__artists" data-target="belgium">
+        <div class="catalog-section__artists__description is-active" data-target="VanDerWeyden">
+          <div class="catalog-section__artists__centering-image">
+            <img class="catalog-section__artists__image" src="./img/jpg/catalogimages/Rogier.jpg"
+              alt="Рогир ван дер Вейден">
+          </div>
+          <h3 class="catalog-section__artists__name third-heading">Рогир ван дер Вейден</h3>
+          <span class="catalog-section__artists__years-of-life fourth-heading">1399/1400 — 18 июня 1464</span>
+          <p class="catalog-section__artists__text">Нидерландский живописец, наряду с Яном ван Эйком считающийся одним
+            из основоположников и наиболее влиятельных мастеров ранненидерландской живописи. Творчество ван дер Вейдена
+            сфокусировано на постижении индивидуальности человеческой личности во всей её глубине. Сохранив спиритуализм
+            предшествующей традиции, ван дер Вейден наполнил старые изобразительные схемы ренессансной концепцией
+            активной человеческой личности, глубоким психологизмом и эмоциональной интенсивностью. В конце жизни, по
+            словам БСЭ, «отказывается от универсализма художественного мировосприятия ван Эйка и концентрирует всё
+            внимание на внутреннем мире человека».</p>
+        </div>
+        <div class="catalog-section__artists__description" data-target="vanEyck">
+          <div class="catalog-section__artists__centering-image">
+            <img class="catalog-section__artists__image" src="./img/jpg/catalogimages/JanVanEyck.jpg" alt="Ян Ван Эйк">
+          </div>
+          <h3 class="catalog-section__artists__name third-heading">Ян ван Эйк</h3>
+          <span class="catalog-section__artists__years-of-life fourth-heading">1385 или 1390 — 9 июля 1441</span>
+          <p class="catalog-section__artists__text">Ранненидерландский (ныне Бельгийский) художник-новатор Северного
+            Возрождения, дипломат, мастер портрета, автор более ста картин на религиозные сюжеты. Младший брат художника
+            и своего учителя Губерта ван Эйка. Ван Эйка считают изобретателем масляных красок, хотя на самом деле он
+            лишь усовершенствовал их. Благодаря ван Эйку масляная техника получила всеобщее признание. Она стала
+            традиционной для Нидерландов, в XV веке пришла в Германию и во Францию, оттуда — в Италию. Самое крупное и
+            знаменитое произведение ван Эйка — Гентский алтарь, начатый, возможно, его братом Губертом. Художник работал
+            над ним по заказу богатого гентского бюргера Йоса Вейдта для его семейной капеллы в 1422—1432 годах.</p>
+        </div>
+        <div class="accordion-section">
+          <div class="accordion">
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1400 по 1499 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link is-active" data-artist="VanDerWeyden">Рогир ван дер Вейден</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link" data-artist="vanEyck">Ян ван Эйк</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1500 по 1599 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Йоахим Патинир</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Йоос ван Клеве</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Херри мет де Блес</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Питер Кук ван Альст</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Питер Артсен</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мабюз</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Питер Брейгель-старший</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Корнелис Флорис де Вриндт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гиллис ван Конингсло</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Тобиас Верхахт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Абел Скотт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Антонис Мор</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Франс Флорис</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ян ван Хемессен</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ян Массейс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Квентин Массейс-младший</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Адам ван Ноорт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Йоос де Момпер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Франс Пурбус Старший</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Франс Пурбус Младший</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бартоломеус Шпрангер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Отто ван Веен</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мартин де Вос</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Себастьян Вранкс</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1600 по 1699 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Пауль Бриль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Питер Пауль Рубенс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Антонис ван Дейк</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Франс Снейдерс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Теодор Ромбоутс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Герард Дюфе</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Адам де Костер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Абрахам ван Дипенбек</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Якоб Йорданс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Адриан Брауэр</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Эразм Квеллин-младший</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Томас Виллебойртс Босхарт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Давид Тенирс-младший</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Хендрик ван Бален</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гаспар де Крайер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Клара Петерс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Геркулес Сегерс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Даниэль Сегерс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Корнелис Схют</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Йоос ван Красбек</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Франс Франкен младший</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Теодор ван Тюльден</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Адриан ван Утрехт</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Корнелис де Вос</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1700 по 1799 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Бальтазар ван ден Боше</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ян Иозеф Гореманс Старший</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Теобальд Мишо</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Карель Брейдель</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Виллем Якоб Геррейнс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Бальтазар Паувель Оммеганк</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Петер Иозеф Верхаген</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Франс Брейдель</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Карель ван Фаленс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Петер Ян ван Регемортер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Жан Батист Жюппен</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1800 по 1899 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Франсуа Жозеф Навез</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Гюстав Вапперс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Никез де Кейзер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Луи Галле</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Антуан Жозеф Вирц</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Хендрик Лейс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Луи Артан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Фелисьен Ропс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Виллем Гефс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Константен Менье</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 1900 по 1999 гг.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Жюль де Брёйкер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Брюнен, Леон</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ван ден Берге, Фриц</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Вантонгерло, Жорж</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Верхарт, Пит</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Дельво, Поль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Изенбек, Фёдор Артурович</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Карт, Анто</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Клаус, Эмиль</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Креспен, Адольф</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лабис, Феликс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ламориньер, Жан-Пьер-Франсуа</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ларманс, Эжен</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Лееманс, Хек</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Леммен, Жорж</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Магритт, Рене</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мазерель, Франс</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Меллери, Ксавье</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Минне, Жорж</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мишо, Анри</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Монталь, Констан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Мортье, Антуан</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Ост, Альфред</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Певернажи, Эрик</p>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-section__title">
+              <h3 class="accordion-section__heading third-heading">C 2000 г.</h3>
+              <button aria-label="Развернуть" class="accordion-section__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    fill="#ECECEC" />
+                  <path
+                    d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                    stroke="white" />
+                  <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-section__content">
+              <ul class="accordion-section__artists">
+                <li>
+                  <p class="accordion-section__link">Бервутс, Фред</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Клаус, Хюго</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Кромбе, Люк-Петер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Равеел, Роже</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Панамаренко</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Тёнинк, Ян</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Форгач, Петер</p>
+                </li>
+                <li>
+                  <p class="accordion-section__link">Панамаренко</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="second-heading second-heading--events">События</h2>
+      <div class="swiper-container events-section">
+        <div class="swiper-wrapper events-section__wrapper">
+          <div class="swiper-slide events-section__slide">
+            <article class="events-section__card">
+              <img class="events-section__card__image" src="./img/jpg/eventsimages/event1.jpg" alt="Книжная гравюра">
+              <span class="events-section__card__data fourth-heading">Музей им. Щусева <br> с 20 марта по 30 апреля</span>
+              <div class="events-section__card__block">
+                <h3 class="events-section__card__title third-heading">Книжная гравюра в живом восприятии</h3>
+                <p class="events-section__card__text crop-text crop-text--first-card">Один из ведущих флорентийских
+                  художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын
+                  Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
+              </div>
+              <a class="events-section__card__detail" href="#">Подробнее</a>
+            </article>
+          </div>
+          <div class="swiper-slide events-section__slide">
+            <article class="events-section__card">
+              <img class="events-section__card__image" src="./img/jpg/eventsimages/event2.jpg" alt="Открытая дискуссия">
+              <span class="events-section__card__data fourth-heading">ММОМА <br> 24 марта 19:00</span>
+              <div class="events-section__card__block">
+                <h3 class="events-section__card__title third-heading">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
+                </h3>
+                <p class="events-section__card__text crop-text crop-text--second-card">Высокий уровень вовлечения
+                  представителей целевой аудитории является четким доказательством простого факта: постоянный
+                  количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых
+                  принципов формирования...</p>
+              </div>
+              <a class="events-section__card__detail" href="#">Подробнее</a>
+            </article>
+          </div>
+          <div class="swiper-slide events-section__slide">
+            <article class="events-section__card">
+              <img class="events-section__card__image" src="./img/jpg/eventsimages/event3.jpg"
+                alt="Выставка «Формация 2020»">
+              <span class="events-section__card__data fourth-heading">Еврейский музей <br> с 31 марта по 21 апреля</span>
+              <div class="events-section__card__block">
+                <h3 class="events-section__card__title third-heading">Выставка «Формация 2020»</h3>
+                <p class="events-section__card__text crop-text crop-text--third-card">Идейные соображения высшего порядка,
+                  а также современная методология разработки играет важную роль в формировании глубокомысленных
+                  рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов
+                  формирования материально-технической и кадровой базы.</p>
+              </div>
+              <a class="events-section__card__detail" href="#">Подробнее</a>
+            </article>
+          </div>
+          <div class="swiper-slide events-section__slide">
+            <article class="events-section__card">
+              <img class="events-section__card__image" src="./img/jpg/eventsimages/event4.jpg"
+                alt="XXIV Международная биеннале молодого искусства">
+              <span class="events-section__card__data fourth-heading">Третьяковка на Крымском валу <br> с 30 марта по 30
+                апреля</span>
+              <div class="events-section__card__block">
+                <h3 class="events-section__card__title third-heading">XXIV Международная биеннале молодого искусства</h3>
+                <p class="events-section__card__text crop-text crop-text--fourth-card">Внезапно, реплицированные с
+                  зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы
+                  маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...
+                </p>
+              </div>
+              <a class="events-section__card__detail" href="#">Подробнее</a>
+            </article>
+          </div>
+          <div class="swiper-slide events-section__slide">
+            <article class="events-section__card">
+              <img class="events-section__card__image" src="./img/jpg/eventsimages/event5.jpg"
+                alt="Джон Винзор. Фотографии из серии «Метафора серебра»">
+              <span class="events-section__card__data fourth-heading">ММАМ <br> с 8 апреля по 20 мая</span>
+              <div class="events-section__card__block">
+                <h3 class="events-section__card__title third-heading">Джон Винзор. Фотографии из серии «Метафора серебра»
+                </h3>
+                <p class="events-section__card__text crop-text">Один из ведущих флорентийских художников Кватроченто,
+                  основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава
+                  художественной мастерской, где юный Микеланджело.</p>
+              </div>
+              <a class="events-section__card__detail" href="#">Подробнее</a>
+            </article>
+          </div>
+        </div>
+        <div class="swiper-pagination-events"></div>
+      </div>
+      <button class="events-section-button button-mobile">Все события</button>
+    </div>
+  </section>
+
+  <section class="editions-section">
+    <div class="container">
+      <div class="editions-section__content">
+        <div class="editions-section__categories">
+          <h2 class="second-heading second-heading--editions">Издания</h2>
+          <h3 class="editions-section__categories__title editions-section__categories__title--categories third-heading">
+            Категории
+            <span class="editions-section__categories__title-open"></span>
+          </h3>
+          <div class="editions-section__categories__block editions-section__categories__block--mobile">
+            <label class="editions-section__categories__label">
+              <input type="checkbox" name="checkbox" class="editions-section__categories__checkbox">
+              <span></span>
+              <span class="editions-section__categories__label__text">Бестселлеры</span>
+            </label>
+            <label class="editions-section__categories__label">
+              <input type="checkbox" name="checkbox" class="editions-section__categories__checkbox">
+              <span></span>
+              <span class="editions-section__categories__label__text">Искусство</span>
+            </label>
+            <label class="editions-section__categories__label">
+              <input type="checkbox" name="checkbox" class="editions-section__categories__checkbox">
+              <span></span>
+              <span class="editions-section__categories__label__text">Архитектура</span>
+            </label>
+            <label class="editions-section__categories__label">
+              <input type="checkbox" name="checkbox" class="editions-section__categories__checkbox">
+              <span></span>
+              <span class="editions-section__categories__label__text">Дизайн</span>
+            </label>
+            <label class="editions-section__categories__label">
+              <input type="checkbox" name="checkbox" class="editions-section__categories__checkbox">
+              <span></span>
+              <span class="editions-section__categories__label__text">Мода</span>
+            </label>
+            <label class="editions-section__categories__label">
+              <input type="checkbox" name="checkbox" class="editions-section__categories__checkbox">
+              <span></span>
+              <span class="editions-section__categories__label__text">Детям</span>
+            </label>
+            <label class="editions-section__categories__label">
+              <input type="checkbox" name="checkbox" class="editions-section__categories__checkbox">
+              <span></span>
+              <span class="editions-section__categories__label__text">Художественная литература</span>
+            </label>
+            <label class="editions-section__categories__label">
+              <input type="checkbox" name="checkbox" class="editions-section__categories__checkbox">
+              <span></span>
+              <span class="editions-section__categories__label__text">Публицистика</span>
+            </label>
+            <label class="editions-section__categories__label">
+              <input type="checkbox" name="checkbox" class="editions-section__categories__checkbox">
+              <span></span>
+              <span class="editions-section__categories__label__text">Путеводители</span>
+            </label>
+            <label class="editions-section__categories__label">
+              <input type="checkbox" name="checkbox" class="editions-section__categories__checkbox">
+              <span></span>
+              <span class="editions-section__categories__label__text">Философия</span>
+            </label>
+            <label class="editions-section__categories__label">
+              <input type="checkbox" name="checkbox" class="editions-section__categories__checkbox">
+              <span></span>
+              <span class="editions-section__categories__label__text">Учебная литература</span>
+            </label>
+            <label class="editions-section__categories__label">
+              <input type="checkbox" name="checkbox" class="editions-section__categories__checkbox">
+              <span></span>
+              <span class="editions-section__categories__label__text">Журналы и газеты</span>
+            </label>
+          </div>
+          <h3 class="editions-section__categories__title editions-section__categories__title--price third-heading">Цена
+          </h3>
+          <div class="editions-section__prices">
+            <form>
+              <span class="editions-section__prices__text">От</span>
+              <input type="text" required placeholder="50" class="editions-section__prices__input">
+              <span class="editions-section__prices__text">до</span>
+              <input type="text" required placeholder="25000" class="editions-section__prices__input">
+              <span class="editions-section__prices__text">руб.</span>
+            </form>
+          </div>
+        </div>
+        <div class="swiper-container swiper-container--editions">
+          <div class="swiper-wrapper swiper-wrapper--editions">
+            <div class="swiper-slide swiper-slide--editions">
+              <div class="swiper-slide__content">
+                <img class="swiper-slide__image-editions" src="./img/jpg/editionsimages/edition1.jpg" alt="">
+                <div class="swiper-slide__block">
+                  <div class="swiper-slide__description">
+                    <p class="swiper-slide__title third-heading">Искусство цвета</p>
+                    <p class="swiper-slide__author">Иттен, Иоханнес</p>
+                  </div>
+                  <span class="swiper-slide__price">620 руб</span>
+                </div>
+                <button class="swiper-slide__button">Заказать</button>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--editions">
+              <div class="swiper-slide__content">
+                <img class="swiper-slide__image-editions" src="./img/jpg/editionsimages/edition2.jpg" alt="">
+                <div class="swiper-slide__block">
+                  <div class="swiper-slide__description">
+                    <p class="swiper-slide__title third-heading ">Типографика</p>
+                    <p class="swiper-slide__author">Рудер, Эмиль</p>
+                  </div>
+                  <span class="swiper-slide__price">2 450 руб</span>
+                </div>
+                <button class="swiper-slide__button">Заказать</button>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--editions">
+              <div class="swiper-slide__content">
+                <img class="swiper-slide__image-editions" src="./img/jpg/editionsimages/edition3.jpg" alt="">
+                <div class="swiper-slide__block">
+                  <div class="swiper-slide__description">
+                    <p class="swiper-slide__title third-heading">Книга про буквы</p>
+                    <p class="swiper-slide__author">Гордон, Юрий</p>
+                  </div>
+                  <span class="swiper-slide__price">2 200 руб</span>
+                </div>
+                <button class="swiper-slide__button">Заказать</button>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--editions">
+              <div class="swiper-slide__content">
+                <img class="swiper-slide__image-editions" src="./img/jpg/editionsimages/edition4.jpg" alt="">
+                <div class="swiper-slide__block">
+                  <div class="swiper-slide__description">
+                    <p class="swiper-slide__title third-heading">Николай Ильин</p>
+                    <p class="swiper-slide__author crop-text crop-text--edition-mobile">Кричевский, Владимир</p>
+                  </div>
+                  <span class="swiper-slide__price">1 100 руб</span>
+                </div>
+                <button class="swiper-slide__button">Заказать</button>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--editions">
+              <div class="swiper-slide__content">
+                <img class="swiper-slide__image-editions" src="./img/jpg/editionsimages/edition5.jpg" alt="">
+                <div class="swiper-slide__block">
+                  <div class="swiper-slide__description">
+                    <p class="swiper-slide__title third-heading crop-text crop-text--edition">Модульные сетки в граф...
+                    </p>
+                    <p class="swiper-slide__author crop-text crop-text--edition-mobile">Мюллер-Брокманн, Йозеф </p>
+                  </div>
+                  <span class="swiper-slide__price">1 450 руб</span>
+                </div>
+                <button class="swiper-slide__button">Заказать</button>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--editions">
+              <div class="swiper-slide__content">
+                <img class="swiper-slide__image-editions" src="./img/jpg/editionsimages/edition6.jpg" alt="">
+                <div class="swiper-slide__block">
+                  <div class="swiper-slide__description">
+                    <p class="swiper-slide__title third-heading crop-text crop-text--edition">Эволюция графических ст...
+                    </p>
+                    <p class="swiper-slide__author">Хеллер, Чваст</p>
+                  </div>
+                  <span class="swiper-slide__price">3 200 руб</span>
+                </div>
+                <button class="swiper-slide__button">Заказать</button>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--editions">
+              <div class="swiper-slide__content">
+                <img class="swiper-slide__image-editions" src="./img/jpg/editionsimages/edition7.jpg" alt="">
+                <div class="swiper-slide__block">
+                  <div class="swiper-slide__description">
+                    <p class="swiper-slide__title third-heading crop-text crop-text--edition">Искусство и визуальное
+                      в...</p>
+                    <p class="swiper-slide__author">Арнхейм, Рудольф </p>
+                  </div>
+                  <span class="swiper-slide__price">2 200 руб</span>
+                </div>
+                <button class="swiper-slide__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+            <div class="swiper-pagination swiper-pagination--gallery swiper-pagination--editions"></div>
+          <div class="swiper-button-prev swiper-button-prev--gallery swiper-button-prev--editions">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+              <path
+                d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
+                fill="#666666" />
+              <path class="swiper-button-border"
+                d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
+                stroke="black" />
+              <path d="M16 20L11 15L16 10" stroke="white" />
+            </svg>
+            </div>
+          <div class="swiper-button-next swiper-button-next--gallery swiper-button-next--editions">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+              <path
+                d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
+                fill="#666666" />
+              <path class="swiper-button-border"
+                d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
+                stroke="black" />
+              <path d="M14 20L19 15L14 10" stroke="white" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="second-heading">Проекты</h2>
+      <p class="projects-section-text text">Предварительные выводы: постоянное информационно-пропагандистское
+        обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё
+        независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего
+        возрастает их статус бесполезности. Прежде всего, постоянное <br class="word-wrap"> информационно-пропагандистское
+        <span class="tooltip"></span>
+        <span class="tooltip-text tooltip-first">
+          Пример современных тенденций - современная методология разработки
+        </span>
+        обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых
+        решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены
+        <span class="tooltip"></span>
+        <span class="tooltip-text tooltip-second">
+          Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции
+        </span>
+        исключительно в разрезе маркетинговых и финансовых
+        <span class="tooltip"></span>
+        <span class="tooltip-text tooltip-third">
+          В стремлении повысить качество
+        </span>
+        предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов
+        призывают нас к новым свершениям, которые, в свою очередь,должны быть смешаны с не уникальными данными до
+        степени совершенной неузнаваемости. Подробнее: <a href="#" class="purple-link"><br class="word-wrap--link">blanchard-art.ru/projects/about</a>
+      </p>
+      <h3 class="projects-section-title third-heading">Партнёры проектов</h3>
+        <div class="swiper-container swiper-container--projects">
+          <div class="swiper-button-container swiper-button-container--prev">
+          <div class="swiper-button-prev swiper-button-prev--gallery swiper-button-prev--projects">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+              <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#ECECEC"/>
+              <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="#ECECEC"/>
+              <path d="M16 20L11 15L16 10" stroke="black"/>
+              </svg>
+          </div>
+        </div>
+        <div class="swiper-button-container swiper-button-container--next">
+          <div class="swiper-button-next swiper-button-next--gallery swiper-button-next--projects">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+              <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#ECECEC"/>
+              <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="#ECECEC"/>
+              <path d="M14 20L19 15L14 10" stroke="black"/>
+              </svg>
+          </div>
+        </div>
+          <div class="swiper-wrapper swiper-wrapper--projects">
+            <div class="swiper-slide swiper-slide--projects">
+              <div class="swiper-slide__image-projects">
+                <img class="swiper-slide__logo" src="./img/png/partnersimages/partnerimage1.png" alt="Freelands Foundatiion">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--projects">
+              <div class="swiper-slide__image-projects">
+                <img class="swiper-slide__logo" src="./img/png/partnersimages/partnerimage2.png" alt="Institute">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--projects">
+              <div class="swiper-slide__image-projects">
+                <img class="swiper-slide__logo" src="./img/png/partnersimages/partnerimage3.png" alt="Workhouse">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--projects">
+              <div class="swiper-slide__image-projects">
+                <img class="swiper-slide__logo" src="./img/png/partnersimages/partnerimage4.png" alt="1849">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--projects">
+              <div class="swiper-slide__image-projects">
+                <img class="swiper-slide__logo" src="./img/png/partnersimages/partnerimage5.png" alt="Hiscox">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--projects">
+              <div class="swiper-slide__image-projects">
+                <img class="swiper-slide__logo" src="./img/png/partnersimages/partnerimage6.png" alt="Camden">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--projects">
+              <div class="swiper-slide__image-projects">
+                <img class="swiper-slide__logo" src="./img/png/partnersimages/partnerimage7.png" alt="Stassen">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--projects">
+              <div class="swiper-slide__image-projects">
+                <img class="swiper-slide__logo" src="./img/png/partnersimages/partnerimage8.png" alt="Watts">
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--projects">
+              <div class="swiper-slide__image-projects">
+                <img class="swiper-slide__logo" src="./img/png/partnersimages/partnerimage9.png" alt="ESAD">
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+        <h2 class="second-heading second-heading--footer container">Контакты</h2>
+        <div class="footer-section-first">
+          <div id="map"></div>
+            <div class="footer-section-first__content container">
+              <div class="footer-section-first__block">
+                <h3 class="third-heading third-heading--footer">Шоурум №4</h3>
+                <h3 class="third-heading third-heading--footer third-heading--footer-second">Шоурум №2</h3>
+                <p class="footer-section-first__address">Леонтьевский переулок, дом 5, строение 1</p>
+                <p class="footer-section-first__address footer-section-first__address--second">Покровский бульвар, дом 24, строение 3</p>
+                <h4 class="footer-section-first__text footer-section-first__text--call">Заказать обратный звонок</h4>
+                <form action="mail.php" method="POST" class="footer-section-first__form">
+                    <input class="footer-section-first__input" name="user_name" type="text" required placeholder="Имя*">
+                    <input class="footer-section-first__input" name="user_phone" type="text" required placeholder="Телефон*">
+                    <button type="submit" class="footer-section-first__button">Заказать</button>
+                </form>
+                <h4 class="footer-section-first__text">Связаться в один клик</h4>
+                <ul class="footer-section-first__list">
+                    <li class="footer-section-first__item">
+                        <a href="https://www.whatsapp.com/?lang=ru" class="footer-section-first__icon footer-section-first__icon--whatsapp"></a>
+                    </li>
+                    <li>
+                        <a href="https://web.telegram.org/#/login" class="footer-section-first__icon footer-section-first__icon--telegram"></a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+          </div>
+        <div class="footer-section-second">
+            <div class="footer-section-second__content container">
+              <picture>
+              <source class="footer-section-second__logo" srcset="./img/adaptive/320/logo320.png" media="(max-width: 767px)">
+                <img class="footer-section-second__logo" src="./img/png/logotip.png" alt="">
+              </picture>
+                <ul class="footer-section-second__list">
+                    <li class="footer-section-second__item">
+                        <a href="https://vk.com/" class="footer-section-second__icon footer-section-second__icon--vk"></a>
+                    </li>
+                    <li class="footer-section-second__item">
+                        <a href="https://www.instagram.com/?hl=ru" class="footer-section-second__icon footer-section-second__icon--instagram"></a>
+                    </li>
+                    <li class="footer-section-second__item">
+                        <a href="https://ru-ru.facebook.com/" class="footer-section-second__icon footer-section-second__icon--facebook"></a>
+                    </li>
+                </ul>
+            </div>
+      </div>
+      </footer>
+
+  <!-- main js -->
+  <script src="./js/index.js"></script>
+  <!-- main js -->
+
+  <!-- map -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+  <script src="./js/map.js"></script>
+  <!-- map -->
+
+  <!-- scroll -->
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <!-- scroll -->
+
+  <!-- accordion -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="./js/accordion.js"></script>
+  <!-- accordion -->
+
+  <!-- choices -->
+  <script src="./js/choices.min.js"></script>
+  <!-- choices -->
+
+  <!-- select -->
+  <script src="./js/select.js"></script>
+  <!-- select -->
+
+  <!-- swiper gallery -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="./js/swiper-gallery.js"></script>
+  <!-- swiper gallery -->
+
+  <!-- swiper events -->
+  <script src="./js/swiper-events.js"></script>
+  <!-- swiper events -->
+
+  <!-- swiper editions -->
+  <script src="./js/swiper-editions.js"></script>
+  <!-- swiper editions  -->
+
+  <!-- swiper projects -->
+  <script src="./js/swiper-projects.js"></script>
+  <!-- swiper projects  -->
+
+
+</body>
+
+</html>

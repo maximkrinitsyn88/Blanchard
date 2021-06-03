@@ -1,0 +1,437 @@
+/* catalog section */
+
+.catalog-section__countries {
+    display: flex;
+    padding-top: 80px;
+    margin-bottom: 10px;
+}
+
+.catalog-section__countries__list {
+    display: flex;
+    margin-left: 24px;
+}
+
+.catalog-section__countries__item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid transparent;
+}
+
+ .catalog-section__countries__item.is-active {
+    border: 2px solid #9D5CD0;
+    border-radius: 50px;
+}
+
+.catalog-section__countries__item:not(:last-child) {
+    margin-right: 27px;
+}
+
+.catalog-section__countries__link {
+    display: inline-block;
+    padding: 21px;
+    border: 2px solid transparent;
+    border-radius: 41px;
+}
+
+.catalog-section__countries__link--france {
+    background: center no-repeat url(../img/png/france.png);
+}
+
+.catalog-section__countries__link--germany {
+    background: center no-repeat url(../img/png/germany.png);
+}
+
+.catalog-section__countries__link--italy {
+    background: center no-repeat url(../img/png/italy.png);
+}
+
+.catalog-section__countries__link--russia {
+    background: center no-repeat url(../img/png/russia.png);
+}
+
+.catalog-section__countries__link--belgium {
+    background: center no-repeat url(../img/png/belgium.png);
+}
+
+.catalog-section__countries__link:focus {
+    outline: none;
+}
+
+.catalog-section__countries__link:hover {
+    filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+}
+
+.catalog-section__countries__link:active {
+    border: 2px solid #9D5CD0;
+    border-radius: 23px;
+}
+
+.catalog-section__text {
+    margin-bottom: 38px;
+}
+
+.catalog-section__artists {
+    display: none;
+}
+
+.catalog-section__artists.is-active {
+    display: flex;
+}
+
+.catalog-section__artists__description {
+    display: none;
+}
+
+.catalog-section__artists__description.is-active {
+    display: block;
+    margin-right: 48px;
+}
+
+.catalog-section__artists__centering-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+    height: 470px;
+}
+
+.catalog-section__artists__image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.catalog-section__artists__name {
+    margin-bottom: 2px;
+    padding-top: 30px;
+}
+
+.catalog-section__artists__years-of-life {
+    margin-bottom: 6px;
+}
+
+.catalog-section__artists__text {
+    max-width: 750px;
+}
+
+/* accordion */
+
+.accordion-section {
+    width: 100%;
+}
+
+.ui-accordion .ui-accordion-header {
+    display: flex;
+    align-items: center;
+    padding: 27px 0 31px 0;
+    margin: 0;
+}
+
+
+.ui-icon {
+    width: 0;
+    height: 0;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background: transparent;
+    border: 1px solid var(--color-light-gray);
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    background: transparent;
+    border-left: none;
+    border-right: none;
+}
+
+.ui-state-focus {
+    outline: none;
+}
+
+.ui-state-active {
+    border-bottom: none;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom: none;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 0;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 0;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 0;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 0;
+}
+
+
+.ui-accordion .ui-accordion-content {
+    border-top: 1px solid var(--color-purple);
+    border-bottom: 1px solid var(--color-purple);
+    border-left: none;
+    border-right: none;
+    padding: 33px 0 64px 0;
+}
+
+.accordion-section__title:nth-child(13) {
+    border-bottom: 1px solid var(--color-light-gray);
+}
+
+.accordion-section__button {
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    padding: 0;
+}
+
+.accordion-section__content {
+    display: flex;
+}
+
+.accordion-section__artists {
+    width: 94%;
+    line-height: 32px;
+    letter-spacing: .4px;
+    columns: 3 208px;
+    /* column-gap: 12px; */
+}
+
+.accordion-section__heading {
+    border: 2px solid transparent;
+}
+
+.ui-state-focus .accordion-section__heading {
+    border: 2px solid #7943A4;
+}
+
+.ui-state-focus .accordion-section__button path {
+    stroke: #7943A4;
+}
+
+.ui-state-hover .accordion-section__heading {
+    color: var(--color-purple);
+    border: 2px solid transparent;
+}
+
+.ui-state-hover .accordion-section__button path {
+    stroke: var(--color-white);
+}
+
+.ui-state-hover .accordion-section__button path {
+    fill: var(--color-purple);
+}
+
+.ui-accordion-header-active .accordion-section__heading {
+    border: 2px solid transparent;
+}
+
+.ui-accordion-header-active .accordion-section__button path {
+    fill: #7943A4;
+}
+
+.ui-accordion-header-active .accordion-section__button path {
+    stroke: var(--color-white);
+}
+
+.ui-accordion-header-active .accordion-section__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(180deg);
+}
+
+.accordion-section__link {
+    display: inline;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.accordion-section__link.is-active {
+    color: #9D5CD0;
+}
+
+.accordion-section__link:focus {
+    outline: none;
+    border: 2px solid #7943A4;
+}
+
+.accordion-section__link:hover {
+    color: var(--color-purple);
+    border: 2px solid transparent;
+    border-bottom: 2px solid var(--color-purple);
+}
+
+.accordion-section__link:active {
+    color: #7943A4;
+    font-weight: 600;
+    border: 2px solid transparent;;
+}
+
+@media (max-width:1500px) {
+
+    .ui-state-hover .accordion-section__heading {
+        color: var(--color-black);
+    }
+
+    .ui-state-hover .accordion-section__button path {
+        fill: #ECECEC;
+    }
+
+    .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+        border: none;
+    }
+
+    .catalog-section__countries__link:hover {
+        filter: none;
+    }
+
+    .accordion-section__link:hover {
+        color: #333333;
+        border: none;
+        border-bottom: none;
+    }
+
+    .catalog-section__artists__centering-image {
+        width: 437px;
+        height: 274px;
+    }
+
+    .accordion-section__artists {
+        width: 100%;
+        columns: 2 208px;
+    }
+
+    .ui-accordion .ui-accordion-content {
+        padding: 35px 0 27px 0;
+    }
+
+    .ui-state-active {
+         border-top: 1px solid #CACACA;
+    }
+
+    .crop-text-artist {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 10;
+        -webkit-box-orient: vertical;
+    }
+}
+
+@media (max-width:1023px) {
+
+    .catalog-section__artists.is-active {
+        flex-direction: column-reverse;
+    }
+
+    .catalog-section__text {
+        margin-bottom: 20px;
+    }
+
+    .catalog-section__artists__description.is-active {
+        margin: 0 auto;
+        padding-top: 55px;
+    }
+
+    .catalog-section__artists__centering-image {
+        width: 668px;
+        height: 419px;
+    }
+
+    .catalog-section__artists__text {
+        min-width: 667px;
+    }
+
+    .catalog-section__countries__item:not(:last-child) {
+      margin-right: 31px;
+  }
+
+    .accordion-section__artists {
+        columns: 3 208px;
+    }
+
+    .ui-accordion .ui-accordion-content {
+        padding: 35px 0 60px 0;
+    }
+
+    .crop-text-artist {
+        -webkit-line-clamp: 7;
+    }
+}
+
+@media (max-width:767px) {
+    .catalog-section__countries {
+        display: block;
+        padding-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .catalog-section__countries__list {
+        margin-left: 0;
+    }
+
+    .catalog-section__countries__item {
+        padding: 6px;
+    }
+
+    .catalog-section__countries__item:not(:last-child) {
+        margin-right: 14px;
+    }
+
+    .catalog-section__countries__link {
+        padding: 14px;
+    }
+
+    .catalog-section__text {
+        display: none;
+    }
+
+    .accordion-section__heading {
+       font-size: 18px;
+    }
+
+    .accordion-section__button svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .ui-accordion .ui-accordion-header {
+            padding: 20px 0 17px 0;
+    }
+
+    .ui-accordion .ui-accordion-content {
+        padding: 18px 0 18px 0;
+    }
+
+    .catalog-section__artists__centering-image {
+        width: 290px;
+        height: 181px;
+    }
+
+    .catalog-section__artists__description.is-active {
+        padding-top: 50px;
+    }
+
+    .catalog-section__artists__name {
+        min-width: 285px;
+        padding-top: 23px;
+    }
+
+    .catalog-section__artists__text {
+        max-width: 289px;
+        min-width: 289px;
+    }
+
+    .crop-text-artist {
+        -webkit-line-clamp: 16;
+    }
+}
+

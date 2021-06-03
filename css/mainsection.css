@@ -1,0 +1,142 @@
+/* main section */
+.main {
+    position: relative;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    11.11% { opacity: 1; }
+    33.33% { opacity: 1; }
+    44.44% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.animate {
+    width:100%;
+}
+
+.animate__picture {
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+.animate__picture:nth-child(1) {
+    animation-delay: 0s;
+}
+.animate__picture:nth-child(2) {
+    animation-delay: 3s;
+}
+.animate__picture:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.animate__img {
+    width: 100%;
+    min-width: 320px;
+    height: 800px;
+}
+
+.main-text {
+    max-width: 579px;
+    margin-bottom: 92px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--color-white);
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 21.5px 33px;
+    margin-bottom: 121px;
+    border: 3px solid transparent;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--color-white);
+    background-color: var(--color-purple);
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.main-btn:focus {
+    border: 3px solid #7943A4;
+    outline: none;
+    color: var(--color-white);
+}
+
+.main-btn:hover {
+    border: 3px solid #D1A9F0;
+}
+
+.main-btn:active {
+    border: 3px solid #D1A9F0;
+    background: #7943A4;
+}
+
+.about-us-text {
+    padding-bottom: 70px;
+}
+
+@media (max-width:1024px) {
+
+    .animate__img {
+      height: 768px;
+    }
+
+    .main-text {
+        max-width: 661px;
+        margin-bottom: 137px;
+    }
+
+    .main-btn {
+        margin-bottom: 108px;
+    }
+
+    .main-btn:hover {
+        border: 3px solid transparent;
+    }
+}
+
+@media (max-width:350px) {
+
+  .main-btn {
+    padding: 9px 16px;
+    margin-bottom: 45px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width:320px) {
+
+    .animate__img {
+      height: 355px;
+    }
+
+    .main-block {
+        text-align: center;
+    }
+
+    .main-text {
+        display: inline-block;
+        max-width: 265px;
+        margin-bottom: 45px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    .about-us-text {
+        padding-bottom: 37px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
