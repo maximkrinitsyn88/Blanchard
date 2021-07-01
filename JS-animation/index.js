@@ -1,38 +1,33 @@
+let openBurger = document.querySelector('.burger')
+let closeBurger = document.querySelector('.close')
 
-document.querySelector('.burger').addEventListener('click', function () {
+let tl = gsap.timeline({paused:true})
 
-  setTimeout(() => {
-  document.querySelector('.menu').classList.add('menu--open')
-  gsap.fromTo(".menu--open",
-  {opacity: 0},
-  {opacity: 1, duration: 0.5});
-  gsap.fromTo(".menu__top",
-  {opacity: 0, y: -50},
-  {opacity: 1, y: 0, duration: 0.5});
-}, 200)
+tl.to('.menu', {display: 'block', duration: 0.1})
 
-  setTimeout(() => {
-  gsap.fromTo(".menu__container",
-  {opacity: 0, y: 50},
-  {opacity: 1, y: 0, duration: 1});
-}, 400)
+  .fromTo(".menu__top",
+    {opacity: 0, y: -50},
+    {opacity: 1, y: 0, duration: 0.5})
 
-setTimeout(() => {
-  gsap.fromTo(".menu__nav",
-  {opacity: 0, y: 10},
-  {opacity: 1, y: 0, duration: 1});
-}, 500)
+  .fromTo(".menu__container",
+    {opacity: 0, y: 50},
+    {opacity: 1, y: 0, duration: 0.5})
 
-setTimeout(() => {
-  gsap.fromTo(".social, .menu__right",
-  {opacity: 0, y: 10},
-  {opacity: 1, y: 0, duration: 1});
-}, 800)
-})
+  .fromTo(".menu__nav",
+    {opacity: 0, y: 30},
+    {opacity: 1, y: 0, duration: 0.5})
 
-document.querySelector('.close').addEventListener('click', function () {
-  document.querySelector('.menu').classList.remove('menu--open')
-})
+  .fromTo(".social, .menu__right",
+    {opacity: 0, y: 30},
+    {opacity: 1, y: 0, duration: 1});
+
+openBurger.onclick = function() {
+  tl.play();
+}
+
+closeBurger.onclick = function() {
+  tl.reverse();
+}
 
 setTimeout(() => {
   gsap.fromTo(".hero__title, .hero__btn",
