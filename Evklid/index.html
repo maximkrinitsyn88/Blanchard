@@ -4,24 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"Evklid"</title>
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-    $( function() {
-        $( "#accordion" ).accordion();
-    } );
-    </script>
-
-    <script src="index.js"></script>
-
+        <!-- css -->
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style55.css">
-
+        <!-- fonts -->
+    <link rel="preload" href="./css/fonts/montserrat-bold.woff2">
+    <link rel="preload" href="./css/fonts/montserrat-medium.woff2">
+    <link rel="preload" href="./css/fonts/montserrat-v14-cyrillic-600.woff2">
+    <link rel="preload" href="./css/fonts/montserrat-v14-cyrillic-800.woff2">
+    <link rel="preload" href="./css/fonts/montserrat-v14-cyrillic-regular.woff2">
+    
 </head>
 <body>
 <div class="container-first">
@@ -169,9 +162,9 @@
                     </div>
                     <div class="working-section-child-right">
                         <picture>
-                        <source srcset="./css/img/img/notebook320.jpg" media="(max-width: 320px)">
-                        <img class="working-section-child-right-image-first" src="./css/img/img/Rectangle 18.jpg" alt="Как мы работаем">
-                        <img class="working-section-child-right-image-second" src="./css/img/img/Rectangle 1823.jpg" alt="Как мы работаем">
+                        <source srcset="./css/img/img/notebook320.webp" media="(max-width: 320px)">
+                        <img class="working-section-child-right-image-first lazyload" data-src="./css/img/img/Rectangle 18.webp" alt="Как мы работаем">
+                        <img class="working-section-child-right-image-second lazyload" data-src="./css/img/img/Rectangle 1823.webp" alt="Как мы работаем">
                     </picture>
                     </div>
                 </div>
@@ -255,8 +248,8 @@
                     <div class="footer-container-leftchiild">
                         <picture>
                             <source srcset="./css/img/png/logotip320.png" media="(max-width: 320px)">
-                <img class="footer-image" src="./css/img/png/logotip21.png" alt="Логотип">
-            </picture>
+                            <img class="footer-image lazyload" data-src="./css/img/png/logotip21.png" alt="Логотип">
+                        </picture>
                 <ul class="footer-container-leftchiild-list">
                     <li>О нас</li>
                     <li>Проекты</li>
@@ -309,24 +302,29 @@
             </div>
         </footer>
     </div>
-
+        <!-- js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="lazyload.min.js"></script>
+    <script>
+        $( function() {
+            $( "#accordion" ).accordion();
+        } );
+        lazyload()
+        </script>
     <script>
         var mySwiper = new Swiper('.swiper-container', {
-      // Optional parameters
       loop: true,
-    
-      // If we need pagination
       pagination: {
         el: '.swiper-pagination',
         clickable: 'boolean',
       },
-    
-      // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-
       effect: 'cube',
     })
     </script>
