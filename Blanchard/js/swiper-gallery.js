@@ -16,8 +16,8 @@ var mySwiper = new Swiper('.swiper-container--gallery', {
 
         1920: {
             slidesPerView: 3,
-            slidesPerColumnFill: 'row',
             slidesPerColumn: 2,
+            slidesPerColumnFill: 'row',
             spaceBetween: 50,
         },
 

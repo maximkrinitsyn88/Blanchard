@@ -135,6 +135,8 @@
 /* swiper editions */
 
 .swiper-container--editions {
+  position: relative;
+  overflow: hidden;
   max-width: 1150px;
   padding-top: 174px;
 }
@@ -474,6 +476,7 @@
   }
 
   .swiper-container--editions {
+    margin: 0 auto;
     max-width: 290px;
     padding-left: 0;
     padding-top: 0;

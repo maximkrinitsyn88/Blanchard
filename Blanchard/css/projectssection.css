@@ -64,8 +64,10 @@
 /* swiper third */
 
 .swiper-container--projects {
+  margin: 0 auto;
   max-width: 1450px;
   position: inherit;
+  overflow: hidden;
 }
 
 .swiper-slide--projects {
@@ -252,6 +254,10 @@
 
   .swiper-slide__logo {
     max-width: 83%;
+  }
+
+  .swiper-button-next--projects {
+    left: -45px;
   }
 
   .swiper-button-prev--projects, .swiper-button-next--projects {
