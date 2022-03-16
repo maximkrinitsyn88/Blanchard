@@ -1,0 +1,738 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Eldorado</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style type="text/css">
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+		}
+
+		[style*="Arial"] {
+			font-family: 'Arial', 'Open Sans', sans-serif !important;
+		}
+
+		img {
+			outline: none;
+			text-decoration: none;
+			border:none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100%!important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+
+		table td {
+			border-collapse: collapse;
+		}
+
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+    .head-link {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		display: inline-block;
+    }
+
+    .head-link--logo {
+      	margin-right: 330px;
+    }
+
+    .substrate {
+		display: inline-block;
+      	background: #A60229;
+      	width: 365px; 
+      	border-radius: 10px;
+    }
+
+    .substrate--second {
+		display: inline-block;
+		border-radius: 1px;
+		border-top: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 20px solid #A60229;
+		border-left: 20px solid #A60229;
+		color: #fff;
+		vertical-align: middle;
+		line-height: 28px;
+		margin-top: -20px;
+    }
+
+	.substrate__head {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-left: 15px;
+		padding-top: 15px;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 38.5px;
+		color: #FFFFFF;
+	}
+
+	.substrate__text {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-left: 15px;
+		padding-top: 0px;
+		padding-bottom: 15px;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 16.5px; 
+		color: #FFFFFF;
+	}
+
+	.product {
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 38.5px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		display: inline-block;
+		color: #FFFFFF;
+		padding-left: 15px;
+	}
+
+	.product--goods {
+		width: 234px;
+	}
+
+	.product__img {
+		display: inline-block;
+		padding-left: 15px;
+		padding-top: 15px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+	}
+
+	.product__descr {
+		display: inline-block;
+		padding-bottom: 20px;
+		padding-top: 10px;
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 17px;
+		margin-right: 50px;
+		color: #353535;
+	}
+
+	.product__quan {
+		display: inline-block;
+		margin-right: 70px;
+		padding-bottom: 20px;
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 25.5px;
+	}
+
+	.product__price {
+		display: inline-block;
+		padding-bottom: 20px;
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 25.5px;
+		color:#353535;
+	}
+
+  .delivery__icon {
+    display: inline-block;
+    padding-left: 15px;
+    margin-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .delivery__text {
+    display: inline-block;
+    margin-right: 324px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 25.5px; color:#353535;
+  }
+
+  .delivery__price {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 25.5px;
+    color:#353535;
+  }
+
+  .payment {
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25.5px;
+    color:#353535;
+  }
+
+  .payment--text {
+    padding-left: 15px; 
+    margin-right: 324px;
+  }
+
+  .human__icon {
+    display: inline-block;
+    padding-left: 33px;
+    padding-top: 3px;
+    margin-right: 15px;
+  }
+
+  .recipient {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+
+  .recipient__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 700;
+    color:#393D41;
+    display: block;
+  }
+
+  .active {
+	display: none;
+  }
+
+  .delivery__icon_second {
+	display: inline-block;
+	padding-top: 3px;
+	margin-right: 15px;
+  }
+
+  .delivery__descr {
+	display: inline-block;
+	margin-bottom: 20px;
+  }
+
+  .recipient__FIO {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 12px; 
+	font-weight: 400; 
+	color:#393D41; 
+	display: block; 
+	margin-bottom: 5px;
+  }
+
+  .gif-2 {
+	  display: inline-block;
+  }
+
+  .gif-2-pr {
+	  padding-right: 30px;
+  }
+
+  .edge__img {
+	  display: inline-block;
+  }
+
+  .edge__text {
+	  display: inline-block;
+  }
+
+  .connect {
+	padding-top: 15px;
+	padding-bottom: 15px;
+  }
+
+  .connect__social {
+	display: inline-block;
+	vertical-align: inherit;
+	padding-right: 40px;
+  }
+
+  .web {
+	  margin-right: 310px;
+  }
+
+
+		@media (max-width: 1050px) {
+
+			.table-280 {
+				width: 280px !important;
+			}
+
+			.table-240 {
+				width: 260px !important;
+			}
+
+			.head-link--logo {
+				margin-right: 55px !important;
+				display: table-cell !important;
+			}
+
+			.substrate {
+				width: 100% !important;
+				margin-bottom: 40px !important;
+			}
+
+			.substrate--second {
+				display: none !important;
+			}
+
+			.substrate__head {
+				margin-bottom: 10px !important;
+			}
+
+			.substrate__head, .substrate__text {
+				line-height: 20px !important;
+				padding-left: 5px !important;
+				font-size: 10px !important;
+			}
+
+			.man-gif {
+				display: none !important;
+			}
+
+			.product {
+				line-height: 20px !important;
+				font-size: 10px !important;
+			}
+
+			.product--goods {
+				width: 70px !important;
+			}
+
+			.product__img {
+				display: inline-block !important;
+				padding-right: 0 !important;
+				padding-bottom: 0 !important;
+				padding-left: 5px !important;
+			}
+
+			.product__descr {
+				display: block !important;
+				padding-bottom: 0 !important;
+				padding-left: 15px !important;
+				font-size: 10px !important;
+				margin-right: 0 !important;
+				width: 70px !important;
+				text-align: center;
+			}
+
+			.product__quan {
+				display: table-cell !important;
+				width: 50px !important;
+			}
+
+			.product__price {
+				display: table-cell !important;
+				width: 70px !important;
+			}
+
+			.delivery__price {
+				display: table-cell !important;
+			}
+
+			.delivery__text {
+				margin-right: 0px !important;
+			}
+
+			.payment {
+				font-size: 10px !important;
+				display: inline-block !important;
+			}
+
+			.payment--text {
+				margin-right: 0px !important;
+			}
+
+			.active {
+				display: table-cell !important;
+			}
+
+			.human__icon, .recipient, .delivery__descr, .delivery__icon_second {
+				display: table-cell !important;
+			}
+
+			.human__icon {
+				padding-left: 0px !important;
+			}
+
+			.human__icon, .delivery__icon_second {
+				width: 20px !important;
+				padding-left: 4px !important;
+			}
+
+			.recipient, .delivery__descr {
+				padding-left: 11px !important;
+			}
+
+			.mb-15 {
+				margin-bottom: 15px !important;
+			}
+
+			.gif-2 {
+				display: table-cell !important;
+			}
+
+			.gif-w {
+				width: 115px !important;
+			}
+
+			.gif-2-pr {
+				padding-right: 0 !important;
+			}
+
+			.unactive {
+				display: none !important;
+			}
+
+			.text__feedback {
+				font-size: 11px !important;
+			}
+
+			.logo-white {
+				display: block !important;
+			}
+
+			.edge {
+				display: inline-block !important;
+				padding-right: 10px !important;
+				text-align: center !important;
+			}
+
+			.edge__text {
+				display: block !important;
+				font-size: 9px !important;
+			}
+
+			.connect {
+				display: block !important;
+			}
+
+			.connect__social {
+				padding-right: 25px !important;
+			}
+
+			.web {
+				margin-right: 30px !important;
+			}
+
+		}
+	</style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+	<div style="font-size:0px; color:white; opacity:0; visibility:hidden; width:0; height:0; display:none;">Тестовое письмо Эльдорадо</div>
+	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#2F2F2F">
+		<tr>
+			<td>
+				<table align="center" class="table-280" cellpadding="0" cellspacing="0" width="600" bgcolor="#FFFFFF">
+					<tr>
+						<td>
+							<table align="center" class="table-240" cellpadding="0" cellspacing="0" width="540" bgcolor="#FFFFFF">
+								<tr>
+									<td align="center" class="head-link head-link--logo">
+                    <a href="https://www.eldorado.ru/"><img src="https://ct36268.tmweb.ru/images/logo.png" alt="Эльдорадо"></a>
+									</td>
+                  <td align="center" class="head-link" style="margin-right: 10px;">
+                    <a href="https://www.eldorado.ru/personal/club/operations/"><img src="https://ct36268.tmweb.ru/images/layer.png" alt="Профиль"></a>      
+									</td>
+                  <td align="center" class="head-link">
+                    <a href="https://www.eldorado.ru/d/"><img src="https://ct36268.tmweb.ru/images/menu.png" alt="Каталог"></a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<table align="center" class="table-280" cellpadding="0" cellspacing="0" width="600" bgcolor="#C2002E">
+					<tr>
+						<td>
+              <table align="center" class="table-240" cellpadding="0" cellspacing="0" width="540" bgcolor="#C2002E">
+                <tr>
+                  <td style="height: 30px;"></td>
+                </tr>
+                <tr>
+                  <td class="substrate">
+                    <h1 class="substrate__head" style="font-family: 'Verdana', 'Open Sans', sans-serif;">Ваш заказ №ХХХХХХХХХ обрабатывается</h1>
+                    <p class="substrate__text" style="font-family: 'Verdana', 'Open Sans', sans-serif;">Мы подтвердим Ваш заказ в ближайшее время, <br> а так же сообщим ожидаемую дату доставки по <br> СМС и эл. почте или позвоним для уточнения.</p>
+					<td><div class="substrate--second"></div></td>
+				</td>
+				  <td style="padding-top: 20px;">
+					<img class="man-gif" width="170px" src="https://ct36268.tmweb.ru/images/GIF_1.gif" alt="Гифка с персонажем">
+				  </td>
+				</tr>
+              </table>
+						</td>
+					</tr>
+				</table>
+				<table align="center" class="table-280" cellpadding="0" cellspacing="0" width="600" bgcolor="#C2002E">
+            <tr>
+              <td>
+                <table align="center" class="table-240" cellpadding="0" cellspacing="0" width="540">
+                  <tr>
+                    <td>
+                      <table align="center" class="table-240" cellpadding="0" cellspacing="0" width="540" bgcolor="#7EB928" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                        <tr>
+                          <td><span class="product product--goods" style="font-family: 'Verdana', 'Open Sans', sans-serif;">ТОВАР</span></td>
+                          <td><span class="product" style="font-family: 'Verdana', 'Open Sans', sans-serif;">КОЛИЧЕСТВО</span></td>
+                          <td><span class="product" style="font-family: 'Verdana', 'Open Sans', sans-serif;">СТОИМОСТЬ</span></td>
+                        </tr>
+                      </table>
+                      <table align="center" class="table-240" cellpadding="0" cellspacing="0" width="540" bgcolor="#FFFFFF" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+                        <tr>
+                          <td class="product__img">
+                            <a href="https://www.eldorado.ru/cat/detail/ultra-hd-4k-oled-televizor-55-sony-kd-55a8/"><img src="https://ct36268.tmweb.ru/images/TV.png" alt="Ultra HD (4K) OLED телевизор 55 Sony KD-55A8"></a> 
+                          </td>
+                          <td class="product__descr" style="font-family: 'Verdana', 'Open Sans', sans-serif;">
+                            <a style="color:#353535" href="https://www.eldorado.ru/cat/detail/ultra-hd-4k-oled-televizor-55-sony-kd-55a8/"><p>Ultra HD (4K) OLED <br> телевизор 55" Sony KD-55A8</p></a>
+                          </td>
+                          <td class="product__quan">
+                            <span style="font-family: 'Verdana', 'Open Sans', sans-serif;">1</span>
+                          </td>
+                          <td class="product__price">
+                            <span style="font-family: 'Verdana', 'Open Sans', sans-serif;">35 990 р.</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="product__img">
+                            <a href="https://www.eldorado.ru/cat/detail/robot-pylesos-tefal-explorer-serie-60-rg7455wh/"><img src="https://ct36268.tmweb.ru/images//robo.png" alt="Робот-пылесос Tefal X-plorer Serie 60 (RG7455WH)"></a> 
+                          </td>
+                          <td class="product__descr" style="font-family: 'Verdana', 'Open Sans', sans-serif;">
+                            <a style="color:#353535" href="https://www.eldorado.ru/cat/detail/robot-pylesos-tefal-explorer-serie-60-rg7455wh/"><p>Робот-пылесос Tefal X-plorer <br> Serie 60 (RG7455WH)</p></a>
+                          </td>
+                          <td class="product__quan">
+                            <span style="font-family: 'Verdana', 'Open Sans', sans-serif;">1</span>
+                          </td>
+                          <td class="product__price">
+                            <span style="font-family: 'Verdana', 'Open Sans', sans-serif;">35 990 р.</span>
+                          </td>
+                        </tr>
+                         <tr>
+                          <td class="delivery__icon">
+                            <img src="https://ct36268.tmweb.ru/images/car .png" alt="Доставка">
+                          </td>
+                          <td class="delivery__text">
+                            <span style="font-family: 'Verdana', 'Open Sans', sans-serif;">Доставка</span>
+                          </td>
+						  <td class="active"></td>
+                          <td class="delivery__price">
+                            <span style="font-family: 'Verdana', 'Open Sans', sans-serif;">290 р.</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="payment payment--text">
+                            <span style="font-family: 'Verdana', 'Open Sans', sans-serif;">К ОПЛАТЕ</span>
+                          </td>
+						  <td class="active"></td>
+                          <td class="payment">
+                            <span style="font-family: 'Verdana', 'Open Sans', sans-serif;">56 270 р.</span>
+                          </td>
+                        </tr>
+                        <tr style="vertical-align: top; display: inline-block;">
+							<tr class="mb-15" style="display: inline-block;">
+								<td class="human__icon">
+									<img src="https://ct36268.tmweb.ru/images/human.png" alt="Иконка человечка">
+								</td>
+								<td class="recipient">
+									<span class="recipient__text" style="font-family: 'Verdana', 'Open Sans', sans-serif;">Получатель</span>
+									<span class="recipient__FIO" style="font-family: 'Verdana', 'Open Sans', sans-serif;">Иван Иванович Иванов</span>
+									<p style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-size: 11px; font-weight: 400; line-height: 12px; color:rgba(53, 53, 53, 0.54); display: block;">Мы направили sms на номер <br> +7 ХХХ ХХХ ХХ ХХ <br> с подтверждением заказа.</p>
+								</td>
+							</tr>
+							<tr class="mb-15" style="display: inline-block;">
+								<td class="delivery__icon_second">
+									<img src="https://ct36268.tmweb.ru/images/car_2.png" alt="Иконка доставки">
+								</td>
+								<td class="delivery__descr">
+									<span style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-size: 12px; font-weight: 700; color:#393D41; display: block;">Доставка курьером</span>
+									<span style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-size: 12px; font-weight: 400; color:#393D41; display: block; margin-bottom: 5px;">Москва, ул. Тихая,д.2а,кв.12</span>
+									<p style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-size: 11px; font-weight: 400; line-height: 12px; color:rgba(53, 53, 53, 0.54); display: block;">Дата доставки заказа: <br> 25.03.2020 <br> Время: с 09:00 по 22:00</p>
+								</td>
+							</tr>
+                         </tr> 
+                      </table>
+					  <table style="margin-bottom: 23px;" align="center" class="table-240" cellpadding="0" cellspacing="0" width="540">
+						  <tr align="center">
+							  <td class="gif-2 gif-2-pr">
+								  <a href="https://www.eldorado.ru/club/referral/">
+									<img class="gif-w" src="https://ct36268.tmweb.ru/images/GIF_2.gif" alt="Приглашайте друзей и получайте бонусы">
+								  </a>
+							  </td>
+							  <td class="gif-2">
+								  <a href="https://www.eldorado.ru/promo/prm-bonuses-for-feedback/">
+									<img class="gif-w" src="https://ct36268.tmweb.ru/images/GIF_3.gif" alt="Дарим бонусы за отзыв">
+								  </a>
+							  </td>
+						  </tr>
+					  </table>
+					  <table style="margin-bottom: 15px;" align="center" class="table-240" cellpadding="0" cellspacing="0" width="540">
+						<tr align="center">
+							<td>
+								<span style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 700; font-size:15px; line-height: 38.5px; color: #FFFFFF;">Ждем вас снова!</span>
+							</td>
+						</tr>
+						<tr align="center">
+							<td>
+								<span style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 400; font-size:15px; line-height: 38.5px; color: #FFFFFF;">Ваш Эльдорадо.</span>
+							</td>
+						</tr>
+					  </table>
+					  <table style="padding-top: 30px;" align="center" class="table-280" cellpadding="0" cellspacing="0" width="600"  bgcolor="#A60229">
+						  <tr>
+							  <td>
+								<table align="center" class="table-240" cellpadding="0" cellspacing="0" width="540">
+									<tr>
+										<td style="padding-top: 25px; padding-bottom: 25px;" align="center">
+											<p class="text__feedback" style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 400; font-size:13px; line-height: 23px; color: #FFFFFF;">Это письмо было отправлено автоматически. <br class="unactive"> Если вы не создавали заказ на нашем ресурсе, 
+												<a style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 400; font-size:13px; line-height: 23px; color: #FFFFFF;" href="https://www.eldorado.ru/help/eldorado/contact_us.php"> сообщите нам</a>
+												об этом.
+											 </p>	
+										</td>
+									</tr>
+								  </table>
+							  </td>
+						  </tr>
+					  </table>
+					  <table style="padding-top: 30px;" align="center" class="table-280" cellpadding="0" cellspacing="0" width="600"  bgcolor="#76BC34">
+						<tr>
+							<td>
+							  <table align="center" class="table-240" cellpadding="0" cellspacing="0" width="540">
+								  <tr>
+									  <td class="logo-white" style="padding-top: 15px; padding-bottom: 15px; padding-right: 10px;">
+										<a href="https://www.eldorado.ru/">
+											<img src="https://ct36268.tmweb.ru/images/logo-white.png" alt="Эльдорадо">
+										</a>
+									  </td>
+									  <td class="edge" style="padding-top: 15px; padding-bottom: 15px; padding-right: 5px;">
+										  <a style="text-decoration: none;" href="https://www.eldorado.ru/promo/internetrassrochka/">
+											<img class="edge__img" width="20px" height="26px" src="https://ct36268.tmweb.ru/images/icon_1.png" alt="Рассрочка онлайн за 1 минуту">
+											<p class="edge__text" style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 400; font-size:10px; line-height: 14px; color: #FFFFFF;">Рассрочка <br> онлайн <br> за 1 минуту</p>
+										  </a>
+									  </td>
+									  <td class="edge" style="padding-top: 15px; padding-bottom: 15px; padding-right: 5px;">
+										  <a style="text-decoration: none;" href="https://www.eldorado.ru/promo/110-uverennosti-v-tsene/">
+											<img class="edge__img" width="20px" height="26px" src="https://ct36268.tmweb.ru/images/icon_2.png" alt="Гарантия низкой цены">
+											<p class="edge__text" style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 400; font-size:10px; line-height: 14px; color: #FFFFFF;">Гарантия <br> низкой <br> цены</p>
+										  </a>
+									</td>
+									<td class="edge" style="padding-top: 15px; padding-bottom: 15px; padding-right: 5px;">
+										<a style="text-decoration: none;" href="https://www.eldorado.ru/help/delivery/">
+											<img class="edge__img" width="20px" height="26px" src="https://ct36268.tmweb.ru/images/icon_3.png" alt="Быстрая и бережная доставка">
+											<p class="edge__text" style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 400; font-size:10px; line-height: 14px; color: #FFFFFF;">Быстрая <br> и бережная <br> доставка</p>
+										</a>
+									</td>
+									<td class="edge" style="padding-top: 15px; padding-bottom: 15px; padding-right: 5px;">
+										<a style="text-decoration: none;" href="https://www.eldorado.ru/club/">
+											<img class="edge__img" width="20px" height="26px" src="https://ct36268.tmweb.ru/images/icon_4.png" alt="Бонусная программа Эльдорадости">
+											<p class="edge__text" style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 400; font-size:10px; line-height: 14px; color: #FFFFFF;">Бонусная <br> программа <br> Эльдорадости</p>
+										</a>
+									</td>
+								  </tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<table style="padding-top: 30px;" align="center" class="table-280" cellpadding="0" cellspacing="0" width="600"  bgcolor="#393E42">
+						<tr>
+							<td>
+								<table align="center" class="table-240" cellpadding="0" cellspacing="0" width="540">
+									<tr>
+										<td class="connect" style="padding-right: 50px;">
+											<span style="display: block; padding-bottom: 20px; font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 700; font-size:11px; line-height: 23px; color: #FFFFFF;">Звоните</span>
+											<a style="display: block; text-decoration: none; font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 700; font-size: 18px; line-height: 23px; color: #FFFFFF;" href="tel:+78002502525"> 8 800 250 25 25</a>
+										</td>
+										<td class="connect">
+											<span style="display: block; padding-bottom: 20px; font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 700; font-size:11px; line-height: 23px; color: #FFFFFF;">Следите за новостями</span>
+											<a class="connect__social" href="https://www.instagram.com/eldorado_ru/">
+												<img src="https://ct36268.tmweb.ru/images/inst.png" alt="Instagram">
+											</a>
+											<a class="connect__social" href="https://www.facebook.com/Eldorado.Stores">
+												<img src="https://ct36268.tmweb.ru/images/fb.png" alt="Facebook">
+											</a>
+											<a class="connect__social" href="https://ok.ru/eldorado.stores">
+												<img src="https://ct36268.tmweb.ru/images/odno.png" alt="Odnoklassniki">
+											</a>
+											<a class="connect__social" href="https://vk.com/eldorado_stores">
+												<img src="https://ct36268.tmweb.ru/images/vk.png" alt="VK">
+											</a>
+											<a class="connect__social" href="https://www.youtube.com/user/eldoradovideo">
+												<img src="https://ct36268.tmweb.ru/images/youtube.png" alt="Youtube">
+											</a>
+										</td>
+									</tr>
+								</table>
+								<table align="center" class="table-240" cellpadding="0" cellspacing="0" width="540">
+									<tr>
+										<td style="padding-bottom: 15px;">
+											<p style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 700; font-size:9px; line-height: 14px; color: #8B8E90;">Вы получили это письмо, так как подписались на рассылку от Эльдорадо. Чтобы не пропускать наши акции и скидки, добавьте адрес 
+												<a style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 700; font-size:9px; line-height: 14px; color: #8B8E90;" href="eldorado@club.eldorado.ru">eldorado@club.eldorado.ru</a>
+											в адресную книгу.</p>
+										</td>
+									</tr>
+									<tr>
+										<td style="padding-bottom: 28px;">
+											<p style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 700; font-size:9px; line-height: 14px; color: #8B8E90;">Вы можете 
+												<a style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 700; font-size:9px; line-height: 14px; color: #8B8E90;" href="{{UnsubscribeUrl}}">отписаться</a>
+												, но мы будем скучать :(</p>
+										</td>
+									</tr>
+									<tr>
+										<td style="padding-bottom: 20px;">
+											<p style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 700; font-size: 9px; line-height: 14px; color: #8B8E90;">Цены действительны на момент отправки письма и могут различаться в зависимости от региона покупки.</p>
+										</td>
+									</tr>
+									<tr>
+										<td class="web" style="display: inline-block; padding-bottom: 30px;">
+											<p style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 700; font-size: 9px; line-height: 14px; color: #8B8E90;">Веб-версия по 
+												<a style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 700; font-size: 9px; line-height: 14px; color: #8B8E90;" href="{{WebLetterUrl}}">ссылке.</a>
+											</p>
+										</td>
+										<td style="display: inline-block; padding-bottom: 30px;">
+											<p style="font-family: 'Verdana', 'Open Sans', sans-serif; margin-top: 0; margin-bottom: 0; font-weight: 700; font-size: 9px; line-height: 14px; color: #8B8E90;"> © Эльдорадо, 2021</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+				</table> 
+
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>
